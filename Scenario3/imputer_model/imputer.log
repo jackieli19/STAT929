@@ -1,0 +1,1345 @@
+2019-04-23 22:49:30,978 [INFO]  Using [[cpu(0)]] as the context for training
+2019-04-23 22:49:30,982 [INFO]  Fitting label encoder <class 'datawig.column_encoders.NumericalEncoder'> on 364 rows                             of training data
+2019-04-23 22:49:30,987 [INFO]  Detected 0 rows with missing labels                         for column Beer
+2019-04-23 22:49:30,988 [INFO]  Dropping 0/364 rows
+2019-04-23 22:49:30,992 [INFO]  Detected 0 rows with missing labels                         for column Beer
+2019-04-23 22:49:30,993 [INFO]  Dropping 0/40 rows
+2019-04-23 22:49:30,995 [INFO]  Train: 364, Test: 40
+2019-04-23 22:49:30,997 [INFO]  Fitting data encoder <class 'datawig.column_encoders.NumericalEncoder'> on columns Car, Steel, Gas, Electricity, Temp and 364 rows of training data with parameters {'input_columns': ['Car', 'Steel', 'Gas', 'Electricity', 'Temp'], 'output_column': 'numerical_features-2yW4Acq9GF', 'output_dim': 5, 'normalize': True, 'scaler': None}
+2019-04-23 22:49:31,003 [INFO]  Building Train Iterator with 364 elements
+2019-04-23 22:49:31,020 [INFO]  Concatenating numeric columns ['Car', 'Steel', 'Gas', 'Electricity', 'Temp'] into numerical_features-2yW4Acq9GF
+2019-04-23 22:49:31,021 [INFO]  Normalizing with StandardScaler
+2019-04-23 22:49:31,027 [INFO]  Data Encoding - Encoded 365 rows of column                         Car,Steel,Gas,Electricity,Temp with <class 'datawig.column_encoders.NumericalEncoder'> into                         <class 'numpy.ndarray'> of shape (365, 5)                         and then into shape (365, 5)
+2019-04-23 22:49:31,030 [INFO]  Concatenating numeric columns ['Beer'] into Beer
+2019-04-23 22:49:31,031 [INFO]  Normalizing with StandardScaler
+2019-04-23 22:49:31,034 [INFO]  Label Encoding - Encoded 365 rows of column                             Beer with <class 'datawig.column_encoders.NumericalEncoder'> into                             <class 'numpy.ndarray'> of shape (365, 1) and                             then into shape (365, 1)
+2019-04-23 22:49:31,035 [INFO]  Building Test Iterator with 40 elements
+2019-04-23 22:49:31,041 [INFO]  Concatenating numeric columns ['Car', 'Steel', 'Gas', 'Electricity', 'Temp'] into numerical_features-2yW4Acq9GF
+2019-04-23 22:49:31,042 [INFO]  Normalizing with StandardScaler
+2019-04-23 22:49:31,045 [INFO]  Data Encoding - Encoded 40 rows of column                         Car,Steel,Gas,Electricity,Temp with <class 'datawig.column_encoders.NumericalEncoder'> into                         <class 'numpy.ndarray'> of shape (40, 5)                         and then into shape (40, 5)
+2019-04-23 22:49:31,050 [INFO]  Concatenating numeric columns ['Beer'] into Beer
+2019-04-23 22:49:31,051 [INFO]  Normalizing with StandardScaler
+2019-04-23 22:49:31,055 [INFO]  Label Encoding - Encoded 40 rows of column                             Beer with <class 'datawig.column_encoders.NumericalEncoder'> into                             <class 'numpy.ndarray'> of shape (40, 1) and                             then into shape (40, 1)
+2019-04-23 22:49:31,057 [INFO]  Concatenating all 1 latent symbols
+2019-04-23 22:49:31,059 [INFO]  Constructing numerical loss for column Beer
+2019-04-23 22:49:31,065 [INFO]  Building output symbols
+2019-04-23 22:49:31,088 [INFO]  
+========== start: fit model
+2019-04-23 22:49:31,089 [WARNING]  Already bound, ignoring bind()
+2019-04-23 22:49:31,153 [INFO]  Epoch[0] Batch [0-37]	Speed: 4455.90 samples/sec	cross-entropy=3.054418	Beer-accuracy=0.000000
+2019-04-23 22:49:31,191 [INFO]  Epoch[0] Train-cross-entropy=2.366376
+2019-04-23 22:49:31,192 [INFO]  Epoch[0] Train-Beer-accuracy=0.000000
+2019-04-23 22:49:31,192 [INFO]  Epoch[0] Time cost=0.096
+2019-04-23 22:49:31,198 [INFO]  Saved checkpoint to "imputer_model/model-0000.params"
+2019-04-23 22:49:31,203 [INFO]  Epoch[0] Validation-cross-entropy=1.144084
+2019-04-23 22:49:31,205 [INFO]  Epoch[0] Validation-Beer-accuracy=0.000000
+2019-04-23 22:49:31,243 [INFO]  Epoch[1] Batch [0-37]	Speed: 5142.87 samples/sec	cross-entropy=1.353728	Beer-accuracy=0.000000
+2019-04-23 22:49:31,273 [INFO]  Epoch[1] Train-cross-entropy=1.283447
+2019-04-23 22:49:31,274 [INFO]  Epoch[1] Train-Beer-accuracy=0.000000
+2019-04-23 22:49:31,275 [INFO]  Epoch[1] Time cost=0.069
+2019-04-23 22:49:31,278 [INFO]  Saved checkpoint to "imputer_model/model-0001.params"
+2019-04-23 22:49:31,281 [INFO]  Epoch[1] Validation-cross-entropy=1.164778
+2019-04-23 22:49:31,282 [INFO]  Epoch[1] Validation-Beer-accuracy=0.000000
+2019-04-23 22:49:31,317 [INFO]  Epoch[2] Batch [0-37]	Speed: 5760.38 samples/sec	cross-entropy=1.196508	Beer-accuracy=0.000000
+2019-04-23 22:49:31,344 [INFO]  Epoch[2] Train-cross-entropy=1.148094
+2019-04-23 22:49:31,345 [INFO]  Epoch[2] Train-Beer-accuracy=0.000000
+2019-04-23 22:49:31,345 [INFO]  Epoch[2] Time cost=0.062
+2019-04-23 22:49:31,348 [INFO]  Saved checkpoint to "imputer_model/model-0002.params"
+2019-04-23 22:49:31,352 [INFO]  Epoch[2] Validation-cross-entropy=1.254689
+2019-04-23 22:49:31,353 [INFO]  Epoch[2] Validation-Beer-accuracy=0.000000
+2019-04-23 22:49:31,387 [INFO]  Epoch[3] Batch [0-37]	Speed: 5855.54 samples/sec	cross-entropy=1.128672	Beer-accuracy=0.000000
+2019-04-23 22:49:31,416 [INFO]  Epoch[3] Train-cross-entropy=1.086395
+2019-04-23 22:49:31,417 [INFO]  Epoch[3] Train-Beer-accuracy=0.000000
+2019-04-23 22:49:31,417 [INFO]  Epoch[3] Time cost=0.063
+2019-04-23 22:49:31,420 [INFO]  Saved checkpoint to "imputer_model/model-0003.params"
+2019-04-23 22:49:31,423 [INFO]  No improvement detected for 3 epochs compared to 1.1440840847790241 last error obtained: 1.311977656558156, stopping here
+2019-04-23 22:49:31,424 [INFO]  Stopping training, patience reached
+2019-04-23 22:49:31,425 [INFO]  
+========== done (0.33780694007873535 s) fit model
+2019-04-23 22:49:31,433 [INFO]  Expected calibration error: 100.0%
+2019-04-23 22:49:31,441 [INFO]  Expected calibration error after calibration: 100.0%
+2019-04-23 22:49:31,451 [INFO]  save metrics in imputer_model/fit-test-metrics.json
+2019-04-23 22:49:31,453 [INFO]  Keeping imputer_model/model-0000.params
+2019-04-23 22:49:31,455 [INFO]  Deleting imputer_model/model-0002.params
+2019-04-23 22:49:31,456 [INFO]  Deleting imputer_model/model-0001.params
+2019-04-23 22:49:31,457 [INFO]  Deleting imputer_model/model-0003.params
+2019-04-23 22:49:34,801 [INFO]  Concatenating numeric columns ['Car', 'Steel', 'Gas', 'Electricity', 'Temp'] into numerical_features-2yW4Acq9GF
+2019-04-23 22:49:34,802 [INFO]  Normalizing with StandardScaler
+2019-04-23 22:49:34,804 [INFO]  Data Encoding - Encoded 435 rows of column                         Car,Steel,Gas,Electricity,Temp with <class 'datawig.column_encoders.NumericalEncoder'> into                         <class 'numpy.ndarray'> of shape (435, 5)                         and then into shape (435, 5)
+2019-04-23 22:49:34,807 [INFO]  Concatenating numeric columns ['Beer'] into Beer
+2019-04-23 22:49:34,808 [INFO]  Normalizing with StandardScaler
+2019-04-23 22:49:34,809 [INFO]  Label Encoding - Encoded 435 rows of column                             Beer with <class 'datawig.column_encoders.NumericalEncoder'> into                             <class 'numpy.ndarray'> of shape (435, 1) and                             then into shape (435, 1)
+2019-04-23 22:49:34,849 [INFO]  Top-k only for CategoricalEncoder, dropping Beer, <class 'datawig.column_encoders.NumericalEncoder'>
+2019-04-23 22:49:34,850 [INFO]  Precision filtering only for CategoricalEncoder returning                             Beer unfiltered
+2019-04-23 22:49:50,525 [INFO]  Assuming 5 numeric input columns: Beer, Steel, Gas, Electricity, Temp
+2019-04-23 22:49:50,526 [INFO]  Assuming 0 string input columns: 
+2019-04-23 22:49:50,527 [INFO]  No output column name provided for ColumnEncoder using Car
+2019-04-23 22:49:50,528 [INFO]  Assuming numeric output column: Car
+2019-04-23 22:49:50,529 [INFO]  Using [[cpu(0)]] as the context for training
+2019-04-23 22:49:50,529 [INFO]  Using [[cpu(0)]] as the context for training
+2019-04-23 22:49:50,532 [INFO]  Fitting label encoder <class 'datawig.column_encoders.NumericalEncoder'> on 332 rows                             of training data
+2019-04-23 22:49:50,532 [INFO]  Fitting label encoder <class 'datawig.column_encoders.NumericalEncoder'> on 332 rows                             of training data
+2019-04-23 22:49:50,537 [INFO]  Detected 0 rows with missing labels                         for column Car
+2019-04-23 22:49:50,537 [INFO]  Detected 0 rows with missing labels                         for column Car
+2019-04-23 22:49:50,538 [INFO]  Dropping 0/332 rows
+2019-04-23 22:49:50,538 [INFO]  Dropping 0/332 rows
+2019-04-23 22:49:50,540 [INFO]  Detected 0 rows with missing labels                         for column Car
+2019-04-23 22:49:50,540 [INFO]  Detected 0 rows with missing labels                         for column Car
+2019-04-23 22:49:50,541 [INFO]  Dropping 0/36 rows
+2019-04-23 22:49:50,541 [INFO]  Dropping 0/36 rows
+2019-04-23 22:49:50,542 [INFO]  Train: 332, Test: 36
+2019-04-23 22:49:50,542 [INFO]  Train: 332, Test: 36
+2019-04-23 22:49:50,543 [INFO]  Fitting data encoder <class 'datawig.column_encoders.NumericalEncoder'> on columns Beer, Steel, Gas, Electricity, Temp and 332 rows of training data with parameters {'input_columns': ['Beer', 'Steel', 'Gas', 'Electricity', 'Temp'], 'output_column': 'numerical_features-z6Y1t9EwL5', 'output_dim': 5, 'normalize': True, 'scaler': None}
+2019-04-23 22:49:50,543 [INFO]  Fitting data encoder <class 'datawig.column_encoders.NumericalEncoder'> on columns Beer, Steel, Gas, Electricity, Temp and 332 rows of training data with parameters {'input_columns': ['Beer', 'Steel', 'Gas', 'Electricity', 'Temp'], 'output_column': 'numerical_features-z6Y1t9EwL5', 'output_dim': 5, 'normalize': True, 'scaler': None}
+2019-04-23 22:49:50,549 [INFO]  Building Train Iterator with 332 elements
+2019-04-23 22:49:50,549 [INFO]  Building Train Iterator with 332 elements
+2019-04-23 22:49:50,562 [INFO]  Concatenating numeric columns ['Beer', 'Steel', 'Gas', 'Electricity', 'Temp'] into numerical_features-z6Y1t9EwL5
+2019-04-23 22:49:50,562 [INFO]  Concatenating numeric columns ['Beer', 'Steel', 'Gas', 'Electricity', 'Temp'] into numerical_features-z6Y1t9EwL5
+2019-04-23 22:49:50,563 [INFO]  Normalizing with StandardScaler
+2019-04-23 22:49:50,563 [INFO]  Normalizing with StandardScaler
+2019-04-23 22:49:50,566 [INFO]  Data Encoding - Encoded 336 rows of column                         Beer,Steel,Gas,Electricity,Temp with <class 'datawig.column_encoders.NumericalEncoder'> into                         <class 'numpy.ndarray'> of shape (336, 5)                         and then into shape (336, 5)
+2019-04-23 22:49:50,566 [INFO]  Data Encoding - Encoded 336 rows of column                         Beer,Steel,Gas,Electricity,Temp with <class 'datawig.column_encoders.NumericalEncoder'> into                         <class 'numpy.ndarray'> of shape (336, 5)                         and then into shape (336, 5)
+2019-04-23 22:49:50,568 [INFO]  Concatenating numeric columns ['Car'] into Car
+2019-04-23 22:49:50,568 [INFO]  Concatenating numeric columns ['Car'] into Car
+2019-04-23 22:49:50,570 [INFO]  Normalizing with StandardScaler
+2019-04-23 22:49:50,570 [INFO]  Normalizing with StandardScaler
+2019-04-23 22:49:50,572 [INFO]  Label Encoding - Encoded 336 rows of column                             Car with <class 'datawig.column_encoders.NumericalEncoder'> into                             <class 'numpy.ndarray'> of shape (336, 1) and                             then into shape (336, 1)
+2019-04-23 22:49:50,572 [INFO]  Label Encoding - Encoded 336 rows of column                             Car with <class 'datawig.column_encoders.NumericalEncoder'> into                             <class 'numpy.ndarray'> of shape (336, 1) and                             then into shape (336, 1)
+2019-04-23 22:49:50,573 [INFO]  Building Test Iterator with 36 elements
+2019-04-23 22:49:50,573 [INFO]  Building Test Iterator with 36 elements
+2019-04-23 22:49:50,598 [INFO]  Concatenating numeric columns ['Beer', 'Steel', 'Gas', 'Electricity', 'Temp'] into numerical_features-z6Y1t9EwL5
+2019-04-23 22:49:50,598 [INFO]  Concatenating numeric columns ['Beer', 'Steel', 'Gas', 'Electricity', 'Temp'] into numerical_features-z6Y1t9EwL5
+2019-04-23 22:49:50,599 [INFO]  Normalizing with StandardScaler
+2019-04-23 22:49:50,599 [INFO]  Normalizing with StandardScaler
+2019-04-23 22:49:50,602 [INFO]  Data Encoding - Encoded 48 rows of column                         Beer,Steel,Gas,Electricity,Temp with <class 'datawig.column_encoders.NumericalEncoder'> into                         <class 'numpy.ndarray'> of shape (48, 5)                         and then into shape (48, 5)
+2019-04-23 22:49:50,602 [INFO]  Data Encoding - Encoded 48 rows of column                         Beer,Steel,Gas,Electricity,Temp with <class 'datawig.column_encoders.NumericalEncoder'> into                         <class 'numpy.ndarray'> of shape (48, 5)                         and then into shape (48, 5)
+2019-04-23 22:49:50,605 [INFO]  Concatenating numeric columns ['Car'] into Car
+2019-04-23 22:49:50,605 [INFO]  Concatenating numeric columns ['Car'] into Car
+2019-04-23 22:49:50,606 [INFO]  Normalizing with StandardScaler
+2019-04-23 22:49:50,606 [INFO]  Normalizing with StandardScaler
+2019-04-23 22:49:50,611 [INFO]  Label Encoding - Encoded 48 rows of column                             Car with <class 'datawig.column_encoders.NumericalEncoder'> into                             <class 'numpy.ndarray'> of shape (48, 1) and                             then into shape (48, 1)
+2019-04-23 22:49:50,611 [INFO]  Label Encoding - Encoded 48 rows of column                             Car with <class 'datawig.column_encoders.NumericalEncoder'> into                             <class 'numpy.ndarray'> of shape (48, 1) and                             then into shape (48, 1)
+2019-04-23 22:49:50,612 [INFO]  Concatenating all 1 latent symbols
+2019-04-23 22:49:50,612 [INFO]  Concatenating all 1 latent symbols
+2019-04-23 22:49:50,613 [INFO]  Constructing numerical loss for column Car
+2019-04-23 22:49:50,613 [INFO]  Constructing numerical loss for column Car
+2019-04-23 22:49:50,617 [INFO]  Building output symbols
+2019-04-23 22:49:50,617 [INFO]  Building output symbols
+2019-04-23 22:49:50,621 [INFO]  
+========== start: fit model
+2019-04-23 22:49:50,621 [INFO]  
+========== start: fit model
+2019-04-23 22:49:50,623 [WARNING]  Already bound, ignoring bind()
+2019-04-23 22:49:50,623 [WARNING]  Already bound, ignoring bind()
+2019-04-23 22:49:50,646 [INFO]  Epoch[0] Batch [0-11]	Speed: 12294.07 samples/sec	cross-entropy=14.693796	Car-accuracy=0.000000
+2019-04-23 22:49:50,646 [INFO]  Epoch[0] Batch [0-11]	Speed: 12294.07 samples/sec	cross-entropy=14.693796	Car-accuracy=0.000000
+2019-04-23 22:49:50,660 [INFO]  Epoch[0] Train-cross-entropy=14.114821
+2019-04-23 22:49:50,660 [INFO]  Epoch[0] Train-cross-entropy=14.114821
+2019-04-23 22:49:50,661 [INFO]  Epoch[0] Train-Car-accuracy=0.000000
+2019-04-23 22:49:50,661 [INFO]  Epoch[0] Train-Car-accuracy=0.000000
+2019-04-23 22:49:50,662 [INFO]  Epoch[0] Time cost=0.033
+2019-04-23 22:49:50,662 [INFO]  Epoch[0] Time cost=0.033
+2019-04-23 22:49:50,668 [INFO]  Saved checkpoint to "imputer_model/model-0000.params"
+2019-04-23 22:49:50,668 [INFO]  Saved checkpoint to "imputer_model/model-0000.params"
+2019-04-23 22:49:50,672 [INFO]  Epoch[0] Validation-cross-entropy=10.189674
+2019-04-23 22:49:50,672 [INFO]  Epoch[0] Validation-cross-entropy=10.189674
+2019-04-23 22:49:50,673 [INFO]  Epoch[0] Validation-Car-accuracy=0.000000
+2019-04-23 22:49:50,673 [INFO]  Epoch[0] Validation-Car-accuracy=0.000000
+2019-04-23 22:49:50,694 [INFO]  Epoch[1] Batch [0-11]	Speed: 9994.28 samples/sec	cross-entropy=11.292033	Car-accuracy=0.000000
+2019-04-23 22:49:50,694 [INFO]  Epoch[1] Batch [0-11]	Speed: 9994.28 samples/sec	cross-entropy=11.292033	Car-accuracy=0.000000
+2019-04-23 22:49:50,711 [INFO]  Epoch[1] Train-cross-entropy=11.178674
+2019-04-23 22:49:50,711 [INFO]  Epoch[1] Train-cross-entropy=11.178674
+2019-04-23 22:49:50,714 [INFO]  Epoch[1] Train-Car-accuracy=0.000000
+2019-04-23 22:49:50,714 [INFO]  Epoch[1] Train-Car-accuracy=0.000000
+2019-04-23 22:49:50,717 [INFO]  Epoch[1] Time cost=0.043
+2019-04-23 22:49:50,717 [INFO]  Epoch[1] Time cost=0.043
+2019-04-23 22:49:50,722 [INFO]  Saved checkpoint to "imputer_model/model-0001.params"
+2019-04-23 22:49:50,722 [INFO]  Saved checkpoint to "imputer_model/model-0001.params"
+2019-04-23 22:49:50,728 [INFO]  Epoch[1] Validation-cross-entropy=9.926953
+2019-04-23 22:49:50,728 [INFO]  Epoch[1] Validation-cross-entropy=9.926953
+2019-04-23 22:49:50,730 [INFO]  Epoch[1] Validation-Car-accuracy=0.000000
+2019-04-23 22:49:50,730 [INFO]  Epoch[1] Validation-Car-accuracy=0.000000
+2019-04-23 22:49:50,753 [INFO]  Epoch[2] Batch [0-11]	Speed: 10333.26 samples/sec	cross-entropy=10.327734	Car-accuracy=0.000000
+2019-04-23 22:49:50,753 [INFO]  Epoch[2] Batch [0-11]	Speed: 10333.26 samples/sec	cross-entropy=10.327734	Car-accuracy=0.000000
+2019-04-23 22:49:50,766 [INFO]  Epoch[2] Train-cross-entropy=10.543697
+2019-04-23 22:49:50,766 [INFO]  Epoch[2] Train-cross-entropy=10.543697
+2019-04-23 22:49:50,766 [INFO]  Epoch[2] Train-Car-accuracy=0.000000
+2019-04-23 22:49:50,766 [INFO]  Epoch[2] Train-Car-accuracy=0.000000
+2019-04-23 22:49:50,767 [INFO]  Epoch[2] Time cost=0.036
+2019-04-23 22:49:50,767 [INFO]  Epoch[2] Time cost=0.036
+2019-04-23 22:49:50,772 [INFO]  Saved checkpoint to "imputer_model/model-0002.params"
+2019-04-23 22:49:50,772 [INFO]  Saved checkpoint to "imputer_model/model-0002.params"
+2019-04-23 22:49:50,776 [INFO]  Epoch[2] Validation-cross-entropy=10.503601
+2019-04-23 22:49:50,776 [INFO]  Epoch[2] Validation-cross-entropy=10.503601
+2019-04-23 22:49:50,777 [INFO]  Epoch[2] Validation-Car-accuracy=0.000000
+2019-04-23 22:49:50,777 [INFO]  Epoch[2] Validation-Car-accuracy=0.000000
+2019-04-23 22:49:50,794 [INFO]  Epoch[3] Batch [0-11]	Speed: 13718.85 samples/sec	cross-entropy=9.954820	Car-accuracy=0.000000
+2019-04-23 22:49:50,794 [INFO]  Epoch[3] Batch [0-11]	Speed: 13718.85 samples/sec	cross-entropy=9.954820	Car-accuracy=0.000000
+2019-04-23 22:49:50,806 [INFO]  Epoch[3] Train-cross-entropy=10.252079
+2019-04-23 22:49:50,806 [INFO]  Epoch[3] Train-cross-entropy=10.252079
+2019-04-23 22:49:50,807 [INFO]  Epoch[3] Train-Car-accuracy=0.000000
+2019-04-23 22:49:50,807 [INFO]  Epoch[3] Train-Car-accuracy=0.000000
+2019-04-23 22:49:50,808 [INFO]  Epoch[3] Time cost=0.030
+2019-04-23 22:49:50,808 [INFO]  Epoch[3] Time cost=0.030
+2019-04-23 22:49:50,813 [INFO]  Saved checkpoint to "imputer_model/model-0003.params"
+2019-04-23 22:49:50,813 [INFO]  Saved checkpoint to "imputer_model/model-0003.params"
+2019-04-23 22:49:50,816 [INFO]  No improvement detected for 3 epochs compared to 10.189674059549967 last error obtained: 10.865280628204346, stopping here
+2019-04-23 22:49:50,816 [INFO]  No improvement detected for 3 epochs compared to 10.189674059549967 last error obtained: 10.865280628204346, stopping here
+2019-04-23 22:49:50,818 [INFO]  Stopping training, patience reached
+2019-04-23 22:49:50,818 [INFO]  Stopping training, patience reached
+2019-04-23 22:49:50,819 [INFO]  
+========== done (0.19790124893188477 s) fit model
+2019-04-23 22:49:50,819 [INFO]  
+========== done (0.19790124893188477 s) fit model
+2019-04-23 22:49:50,825 [INFO]  Expected calibration error: 100.0%
+2019-04-23 22:49:50,825 [INFO]  Expected calibration error: 100.0%
+2019-04-23 22:49:50,831 [INFO]  Expected calibration error after calibration: 100.0%
+2019-04-23 22:49:50,831 [INFO]  Expected calibration error after calibration: 100.0%
+2019-04-23 22:49:50,837 [INFO]  save metrics in imputer_model/fit-test-metrics.json
+2019-04-23 22:49:50,837 [INFO]  save metrics in imputer_model/fit-test-metrics.json
+2019-04-23 22:49:50,839 [INFO]  Keeping imputer_model/model-0001.params
+2019-04-23 22:49:50,839 [INFO]  Keeping imputer_model/model-0001.params
+2019-04-23 22:49:50,840 [INFO]  Deleting imputer_model/model-0002.params
+2019-04-23 22:49:50,840 [INFO]  Deleting imputer_model/model-0002.params
+2019-04-23 22:49:50,842 [INFO]  Deleting imputer_model/model-0003.params
+2019-04-23 22:49:50,842 [INFO]  Deleting imputer_model/model-0003.params
+2019-04-23 22:49:50,843 [INFO]  Deleting imputer_model/model-0000.params
+2019-04-23 22:49:50,843 [INFO]  Deleting imputer_model/model-0000.params
+2019-04-23 22:49:52,479 [INFO]  Concatenating numeric columns ['Beer', 'Steel', 'Gas', 'Electricity', 'Temp'] into numerical_features-z6Y1t9EwL5
+2019-04-23 22:49:52,479 [INFO]  Concatenating numeric columns ['Beer', 'Steel', 'Gas', 'Electricity', 'Temp'] into numerical_features-z6Y1t9EwL5
+2019-04-23 22:49:52,480 [INFO]  Normalizing with StandardScaler
+2019-04-23 22:49:52,480 [INFO]  Normalizing with StandardScaler
+2019-04-23 22:49:52,482 [INFO]  Data Encoding - Encoded 448 rows of column                         Beer,Steel,Gas,Electricity,Temp with <class 'datawig.column_encoders.NumericalEncoder'> into                         <class 'numpy.ndarray'> of shape (448, 5)                         and then into shape (448, 5)
+2019-04-23 22:49:52,482 [INFO]  Data Encoding - Encoded 448 rows of column                         Beer,Steel,Gas,Electricity,Temp with <class 'datawig.column_encoders.NumericalEncoder'> into                         <class 'numpy.ndarray'> of shape (448, 5)                         and then into shape (448, 5)
+2019-04-23 22:49:52,484 [INFO]  Concatenating numeric columns ['Car'] into Car
+2019-04-23 22:49:52,484 [INFO]  Concatenating numeric columns ['Car'] into Car
+2019-04-23 22:49:52,485 [INFO]  Normalizing with StandardScaler
+2019-04-23 22:49:52,485 [INFO]  Normalizing with StandardScaler
+2019-04-23 22:49:52,489 [INFO]  Label Encoding - Encoded 448 rows of column                             Car with <class 'datawig.column_encoders.NumericalEncoder'> into                             <class 'numpy.ndarray'> of shape (448, 1) and                             then into shape (448, 1)
+2019-04-23 22:49:52,489 [INFO]  Label Encoding - Encoded 448 rows of column                             Car with <class 'datawig.column_encoders.NumericalEncoder'> into                             <class 'numpy.ndarray'> of shape (448, 1) and                             then into shape (448, 1)
+2019-04-23 22:49:52,504 [INFO]  Top-k only for CategoricalEncoder, dropping Car, <class 'datawig.column_encoders.NumericalEncoder'>
+2019-04-23 22:49:52,504 [INFO]  Top-k only for CategoricalEncoder, dropping Car, <class 'datawig.column_encoders.NumericalEncoder'>
+2019-04-23 22:49:52,505 [INFO]  Precision filtering only for CategoricalEncoder returning                             Car unfiltered
+2019-04-23 22:49:52,505 [INFO]  Precision filtering only for CategoricalEncoder returning                             Car unfiltered
+2019-04-23 22:50:46,551 [INFO]  Assuming 5 numeric input columns: Beer, Steel, Gas, Electricity, Temp
+2019-04-23 22:50:46,551 [INFO]  Assuming 5 numeric input columns: Beer, Steel, Gas, Electricity, Temp
+2019-04-23 22:50:46,553 [INFO]  Assuming 0 string input columns: 
+2019-04-23 22:50:46,553 [INFO]  Assuming 0 string input columns: 
+2019-04-23 22:50:46,554 [INFO]  No output column name provided for ColumnEncoder using Car
+2019-04-23 22:50:46,554 [INFO]  No output column name provided for ColumnEncoder using Car
+2019-04-23 22:50:46,555 [INFO]  Assuming numeric output column: Car
+2019-04-23 22:50:46,555 [INFO]  Assuming numeric output column: Car
+2019-04-23 22:50:46,555 [INFO]  Using [[cpu(0)]] as the context for training
+2019-04-23 22:50:46,555 [INFO]  Using [[cpu(0)]] as the context for training
+2019-04-23 22:50:46,558 [INFO]  Detected 57 rows with missing labels                         for column Car
+2019-04-23 22:50:46,558 [INFO]  Detected 57 rows with missing labels                         for column Car
+2019-04-23 22:50:46,559 [INFO]  Dropping 57/364 rows
+2019-04-23 22:50:46,559 [INFO]  Dropping 57/364 rows
+2019-04-23 22:50:46,561 [INFO]  Detected 9 rows with missing labels                         for column Car
+2019-04-23 22:50:46,561 [INFO]  Detected 9 rows with missing labels                         for column Car
+2019-04-23 22:50:46,562 [INFO]  Dropping 9/40 rows
+2019-04-23 22:50:46,562 [INFO]  Dropping 9/40 rows
+2019-04-23 22:50:46,564 [INFO]  Train: 307, Test: 31
+2019-04-23 22:50:46,564 [INFO]  Train: 307, Test: 31
+2019-04-23 22:50:46,564 [INFO]  Building Train Iterator with 307 elements
+2019-04-23 22:50:46,564 [INFO]  Building Train Iterator with 307 elements
+2019-04-23 22:50:46,578 [INFO]  Concatenating numeric columns ['Beer', 'Steel', 'Gas', 'Electricity', 'Temp'] into numerical_features-z6Y1t9EwL5
+2019-04-23 22:50:46,578 [INFO]  Concatenating numeric columns ['Beer', 'Steel', 'Gas', 'Electricity', 'Temp'] into numerical_features-z6Y1t9EwL5
+2019-04-23 22:50:46,580 [INFO]  Normalizing with StandardScaler
+2019-04-23 22:50:46,580 [INFO]  Normalizing with StandardScaler
+2019-04-23 22:50:46,581 [INFO]  Data Encoding - Encoded 310 rows of column                         Beer,Steel,Gas,Electricity,Temp with <class 'datawig.column_encoders.NumericalEncoder'> into                         <class 'numpy.ndarray'> of shape (310, 5)                         and then into shape (310, 5)
+2019-04-23 22:50:46,581 [INFO]  Data Encoding - Encoded 310 rows of column                         Beer,Steel,Gas,Electricity,Temp with <class 'datawig.column_encoders.NumericalEncoder'> into                         <class 'numpy.ndarray'> of shape (310, 5)                         and then into shape (310, 5)
+2019-04-23 22:50:46,584 [INFO]  Concatenating numeric columns ['Car'] into Car
+2019-04-23 22:50:46,584 [INFO]  Concatenating numeric columns ['Car'] into Car
+2019-04-23 22:50:46,585 [INFO]  Normalizing with StandardScaler
+2019-04-23 22:50:46,585 [INFO]  Normalizing with StandardScaler
+2019-04-23 22:50:46,586 [INFO]  Label Encoding - Encoded 310 rows of column                             Car with <class 'datawig.column_encoders.NumericalEncoder'> into                             <class 'numpy.ndarray'> of shape (310, 1) and                             then into shape (310, 1)
+2019-04-23 22:50:46,586 [INFO]  Label Encoding - Encoded 310 rows of column                             Car with <class 'datawig.column_encoders.NumericalEncoder'> into                             <class 'numpy.ndarray'> of shape (310, 1) and                             then into shape (310, 1)
+2019-04-23 22:50:46,588 [INFO]  Building Test Iterator with 31 elements
+2019-04-23 22:50:46,588 [INFO]  Building Test Iterator with 31 elements
+2019-04-23 22:50:46,608 [INFO]  Concatenating numeric columns ['Beer', 'Steel', 'Gas', 'Electricity', 'Temp'] into numerical_features-z6Y1t9EwL5
+2019-04-23 22:50:46,608 [INFO]  Concatenating numeric columns ['Beer', 'Steel', 'Gas', 'Electricity', 'Temp'] into numerical_features-z6Y1t9EwL5
+2019-04-23 22:50:46,609 [INFO]  Normalizing with StandardScaler
+2019-04-23 22:50:46,609 [INFO]  Normalizing with StandardScaler
+2019-04-23 22:50:46,613 [INFO]  Data Encoding - Encoded 35 rows of column                         Beer,Steel,Gas,Electricity,Temp with <class 'datawig.column_encoders.NumericalEncoder'> into                         <class 'numpy.ndarray'> of shape (35, 5)                         and then into shape (35, 5)
+2019-04-23 22:50:46,613 [INFO]  Data Encoding - Encoded 35 rows of column                         Beer,Steel,Gas,Electricity,Temp with <class 'datawig.column_encoders.NumericalEncoder'> into                         <class 'numpy.ndarray'> of shape (35, 5)                         and then into shape (35, 5)
+2019-04-23 22:50:46,619 [INFO]  Concatenating numeric columns ['Car'] into Car
+2019-04-23 22:50:46,619 [INFO]  Concatenating numeric columns ['Car'] into Car
+2019-04-23 22:50:46,621 [INFO]  Normalizing with StandardScaler
+2019-04-23 22:50:46,621 [INFO]  Normalizing with StandardScaler
+2019-04-23 22:50:46,623 [INFO]  Label Encoding - Encoded 35 rows of column                             Car with <class 'datawig.column_encoders.NumericalEncoder'> into                             <class 'numpy.ndarray'> of shape (35, 1) and                             then into shape (35, 1)
+2019-04-23 22:50:46,623 [INFO]  Label Encoding - Encoded 35 rows of column                             Car with <class 'datawig.column_encoders.NumericalEncoder'> into                             <class 'numpy.ndarray'> of shape (35, 1) and                             then into shape (35, 1)
+2019-04-23 22:50:46,625 [INFO]  
+========== start: fit model
+2019-04-23 22:50:46,625 [INFO]  
+========== start: fit model
+2019-04-23 22:50:46,627 [WARNING]  Already bound, ignoring bind()
+2019-04-23 22:50:46,627 [WARNING]  Already bound, ignoring bind()
+2019-04-23 22:50:46,632 [WARNING]  optimizer already initialized, ignoring...
+2019-04-23 22:50:46,632 [WARNING]  optimizer already initialized, ignoring...
+2019-04-23 22:50:46,677 [INFO]  Epoch[0] Batch [0-31]	Speed: 4005.06 samples/sec	cross-entropy=3.583076	Car-accuracy=0.000000
+2019-04-23 22:50:46,677 [INFO]  Epoch[0] Batch [0-31]	Speed: 4005.06 samples/sec	cross-entropy=3.583076	Car-accuracy=0.000000
+2019-04-23 22:50:46,706 [INFO]  Epoch[0] Train-cross-entropy=3.546902
+2019-04-23 22:50:46,706 [INFO]  Epoch[0] Train-cross-entropy=3.546902
+2019-04-23 22:50:46,707 [INFO]  Epoch[0] Train-Car-accuracy=0.000000
+2019-04-23 22:50:46,707 [INFO]  Epoch[0] Train-Car-accuracy=0.000000
+2019-04-23 22:50:46,707 [INFO]  Epoch[0] Time cost=0.074
+2019-04-23 22:50:46,707 [INFO]  Epoch[0] Time cost=0.074
+2019-04-23 22:50:46,710 [INFO]  Saved checkpoint to "imputer_model/model-0000.params"
+2019-04-23 22:50:46,710 [INFO]  Saved checkpoint to "imputer_model/model-0000.params"
+2019-04-23 22:50:46,714 [INFO]  Epoch[0] Validation-cross-entropy=2.586117
+2019-04-23 22:50:46,714 [INFO]  Epoch[0] Validation-cross-entropy=2.586117
+2019-04-23 22:50:46,716 [INFO]  Epoch[0] Validation-Car-accuracy=0.000000
+2019-04-23 22:50:46,716 [INFO]  Epoch[0] Validation-Car-accuracy=0.000000
+2019-04-23 22:50:46,747 [INFO]  Epoch[1] Batch [0-31]	Speed: 5402.79 samples/sec	cross-entropy=3.436903	Car-accuracy=0.000000
+2019-04-23 22:50:46,747 [INFO]  Epoch[1] Batch [0-31]	Speed: 5402.79 samples/sec	cross-entropy=3.436903	Car-accuracy=0.000000
+2019-04-23 22:50:46,776 [INFO]  Epoch[1] Train-cross-entropy=3.432944
+2019-04-23 22:50:46,776 [INFO]  Epoch[1] Train-cross-entropy=3.432944
+2019-04-23 22:50:46,776 [INFO]  Epoch[1] Train-Car-accuracy=0.000000
+2019-04-23 22:50:46,776 [INFO]  Epoch[1] Train-Car-accuracy=0.000000
+2019-04-23 22:50:46,777 [INFO]  Epoch[1] Time cost=0.060
+2019-04-23 22:50:46,777 [INFO]  Epoch[1] Time cost=0.060
+2019-04-23 22:50:46,780 [INFO]  Saved checkpoint to "imputer_model/model-0001.params"
+2019-04-23 22:50:46,780 [INFO]  Saved checkpoint to "imputer_model/model-0001.params"
+2019-04-23 22:50:46,784 [INFO]  Epoch[1] Validation-cross-entropy=2.608988
+2019-04-23 22:50:46,784 [INFO]  Epoch[1] Validation-cross-entropy=2.608988
+2019-04-23 22:50:46,785 [INFO]  Epoch[1] Validation-Car-accuracy=0.000000
+2019-04-23 22:50:46,785 [INFO]  Epoch[1] Validation-Car-accuracy=0.000000
+2019-04-23 22:50:46,815 [INFO]  Epoch[2] Batch [0-31]	Speed: 5724.22 samples/sec	cross-entropy=3.410311	Car-accuracy=0.000000
+2019-04-23 22:50:46,815 [INFO]  Epoch[2] Batch [0-31]	Speed: 5724.22 samples/sec	cross-entropy=3.410311	Car-accuracy=0.000000
+2019-04-23 22:50:46,840 [INFO]  Epoch[2] Train-cross-entropy=3.406128
+2019-04-23 22:50:46,840 [INFO]  Epoch[2] Train-cross-entropy=3.406128
+2019-04-23 22:50:46,841 [INFO]  Epoch[2] Train-Car-accuracy=0.000000
+2019-04-23 22:50:46,841 [INFO]  Epoch[2] Train-Car-accuracy=0.000000
+2019-04-23 22:50:46,841 [INFO]  Epoch[2] Time cost=0.055
+2019-04-23 22:50:46,841 [INFO]  Epoch[2] Time cost=0.055
+2019-04-23 22:50:46,844 [INFO]  Saved checkpoint to "imputer_model/model-0002.params"
+2019-04-23 22:50:46,844 [INFO]  Saved checkpoint to "imputer_model/model-0002.params"
+2019-04-23 22:50:46,847 [INFO]  Epoch[2] Validation-cross-entropy=2.619408
+2019-04-23 22:50:46,847 [INFO]  Epoch[2] Validation-cross-entropy=2.619408
+2019-04-23 22:50:46,848 [INFO]  Epoch[2] Validation-Car-accuracy=0.000000
+2019-04-23 22:50:46,848 [INFO]  Epoch[2] Validation-Car-accuracy=0.000000
+2019-04-23 22:50:46,877 [INFO]  Epoch[3] Batch [0-31]	Speed: 6043.61 samples/sec	cross-entropy=3.390397	Car-accuracy=0.000000
+2019-04-23 22:50:46,877 [INFO]  Epoch[3] Batch [0-31]	Speed: 6043.61 samples/sec	cross-entropy=3.390397	Car-accuracy=0.000000
+2019-04-23 22:50:46,900 [INFO]  Epoch[3] Train-cross-entropy=3.384900
+2019-04-23 22:50:46,900 [INFO]  Epoch[3] Train-cross-entropy=3.384900
+2019-04-23 22:50:46,901 [INFO]  Epoch[3] Train-Car-accuracy=0.000000
+2019-04-23 22:50:46,901 [INFO]  Epoch[3] Train-Car-accuracy=0.000000
+2019-04-23 22:50:46,901 [INFO]  Epoch[3] Time cost=0.053
+2019-04-23 22:50:46,901 [INFO]  Epoch[3] Time cost=0.053
+2019-04-23 22:50:46,905 [INFO]  Saved checkpoint to "imputer_model/model-0003.params"
+2019-04-23 22:50:46,905 [INFO]  Saved checkpoint to "imputer_model/model-0003.params"
+2019-04-23 22:50:46,908 [INFO]  No improvement detected for 3 epochs compared to 2.586116918495723 last error obtained: 2.6178000824792043, stopping here
+2019-04-23 22:50:46,908 [INFO]  No improvement detected for 3 epochs compared to 2.586116918495723 last error obtained: 2.6178000824792043, stopping here
+2019-04-23 22:50:46,909 [INFO]  Stopping training, patience reached
+2019-04-23 22:50:46,909 [INFO]  Stopping training, patience reached
+2019-04-23 22:50:46,910 [INFO]  
+========== done (0.2847437858581543 s) fit model
+2019-04-23 22:50:46,910 [INFO]  
+========== done (0.2847437858581543 s) fit model
+2019-04-23 22:50:46,917 [INFO]  Expected calibration error: 100.0%
+2019-04-23 22:50:46,917 [INFO]  Expected calibration error: 100.0%
+2019-04-23 22:50:46,922 [INFO]  Expected calibration error after calibration: 100.0%
+2019-04-23 22:50:46,922 [INFO]  Expected calibration error after calibration: 100.0%
+2019-04-23 22:50:46,930 [INFO]  save metrics in imputer_model/fit-test-metrics.json
+2019-04-23 22:50:46,930 [INFO]  save metrics in imputer_model/fit-test-metrics.json
+2019-04-23 22:50:46,932 [INFO]  Keeping imputer_model/model-0000.params
+2019-04-23 22:50:46,932 [INFO]  Keeping imputer_model/model-0000.params
+2019-04-23 22:50:46,933 [INFO]  Deleting imputer_model/model-0002.params
+2019-04-23 22:50:46,933 [INFO]  Deleting imputer_model/model-0002.params
+2019-04-23 22:50:46,934 [INFO]  Deleting imputer_model/model-0001.params
+2019-04-23 22:50:46,934 [INFO]  Deleting imputer_model/model-0001.params
+2019-04-23 22:50:46,935 [INFO]  Deleting imputer_model/model-0003.params
+2019-04-23 22:50:46,935 [INFO]  Deleting imputer_model/model-0003.params
+2019-04-23 22:50:50,248 [INFO]  Concatenating numeric columns ['Beer', 'Steel', 'Gas', 'Electricity', 'Temp'] into numerical_features-z6Y1t9EwL5
+2019-04-23 22:50:50,248 [INFO]  Concatenating numeric columns ['Beer', 'Steel', 'Gas', 'Electricity', 'Temp'] into numerical_features-z6Y1t9EwL5
+2019-04-23 22:50:50,249 [INFO]  Normalizing with StandardScaler
+2019-04-23 22:50:50,249 [INFO]  Normalizing with StandardScaler
+2019-04-23 22:50:50,252 [INFO]  Data Encoding - Encoded 435 rows of column                         Beer,Steel,Gas,Electricity,Temp with <class 'datawig.column_encoders.NumericalEncoder'> into                         <class 'numpy.ndarray'> of shape (435, 5)                         and then into shape (435, 5)
+2019-04-23 22:50:50,252 [INFO]  Data Encoding - Encoded 435 rows of column                         Beer,Steel,Gas,Electricity,Temp with <class 'datawig.column_encoders.NumericalEncoder'> into                         <class 'numpy.ndarray'> of shape (435, 5)                         and then into shape (435, 5)
+2019-04-23 22:50:50,254 [INFO]  Concatenating numeric columns ['Car'] into Car
+2019-04-23 22:50:50,254 [INFO]  Concatenating numeric columns ['Car'] into Car
+2019-04-23 22:50:50,254 [INFO]  Normalizing with StandardScaler
+2019-04-23 22:50:50,254 [INFO]  Normalizing with StandardScaler
+2019-04-23 22:50:50,257 [INFO]  Label Encoding - Encoded 435 rows of column                             Car with <class 'datawig.column_encoders.NumericalEncoder'> into                             <class 'numpy.ndarray'> of shape (435, 1) and                             then into shape (435, 1)
+2019-04-23 22:50:50,257 [INFO]  Label Encoding - Encoded 435 rows of column                             Car with <class 'datawig.column_encoders.NumericalEncoder'> into                             <class 'numpy.ndarray'> of shape (435, 1) and                             then into shape (435, 1)
+2019-04-23 22:50:50,295 [INFO]  Top-k only for CategoricalEncoder, dropping Car, <class 'datawig.column_encoders.NumericalEncoder'>
+2019-04-23 22:50:50,295 [INFO]  Top-k only for CategoricalEncoder, dropping Car, <class 'datawig.column_encoders.NumericalEncoder'>
+2019-04-23 22:50:50,296 [INFO]  Precision filtering only for CategoricalEncoder returning                             Car unfiltered
+2019-04-23 22:50:50,296 [INFO]  Precision filtering only for CategoricalEncoder returning                             Car unfiltered
+2019-04-23 22:50:56,844 [INFO]  Concatenating numeric columns ['Beer', 'Steel', 'Gas', 'Electricity', 'Temp'] into numerical_features-z6Y1t9EwL5
+2019-04-23 22:50:56,844 [INFO]  Concatenating numeric columns ['Beer', 'Steel', 'Gas', 'Electricity', 'Temp'] into numerical_features-z6Y1t9EwL5
+2019-04-23 22:50:56,845 [INFO]  Normalizing with StandardScaler
+2019-04-23 22:50:56,845 [INFO]  Normalizing with StandardScaler
+2019-04-23 22:50:56,848 [INFO]  Data Encoding - Encoded 435 rows of column                         Beer,Steel,Gas,Electricity,Temp with <class 'datawig.column_encoders.NumericalEncoder'> into                         <class 'numpy.ndarray'> of shape (435, 5)                         and then into shape (435, 5)
+2019-04-23 22:50:56,848 [INFO]  Data Encoding - Encoded 435 rows of column                         Beer,Steel,Gas,Electricity,Temp with <class 'datawig.column_encoders.NumericalEncoder'> into                         <class 'numpy.ndarray'> of shape (435, 5)                         and then into shape (435, 5)
+2019-04-23 22:50:56,850 [INFO]  Concatenating numeric columns ['Car'] into Car
+2019-04-23 22:50:56,850 [INFO]  Concatenating numeric columns ['Car'] into Car
+2019-04-23 22:50:56,851 [INFO]  Normalizing with StandardScaler
+2019-04-23 22:50:56,851 [INFO]  Normalizing with StandardScaler
+2019-04-23 22:50:56,853 [INFO]  Label Encoding - Encoded 435 rows of column                             Car with <class 'datawig.column_encoders.NumericalEncoder'> into                             <class 'numpy.ndarray'> of shape (435, 1) and                             then into shape (435, 1)
+2019-04-23 22:50:56,853 [INFO]  Label Encoding - Encoded 435 rows of column                             Car with <class 'datawig.column_encoders.NumericalEncoder'> into                             <class 'numpy.ndarray'> of shape (435, 1) and                             then into shape (435, 1)
+2019-04-23 22:50:56,893 [INFO]  Top-k only for CategoricalEncoder, dropping Car, <class 'datawig.column_encoders.NumericalEncoder'>
+2019-04-23 22:50:56,893 [INFO]  Top-k only for CategoricalEncoder, dropping Car, <class 'datawig.column_encoders.NumericalEncoder'>
+2019-04-23 22:50:56,894 [INFO]  Precision filtering only for CategoricalEncoder returning                             Car unfiltered
+2019-04-23 22:50:56,894 [INFO]  Precision filtering only for CategoricalEncoder returning                             Car unfiltered
+2019-04-23 22:51:09,210 [INFO]  Assuming 5 numeric input columns: Car, Steel, Gas, Electricity, Temp
+2019-04-23 22:51:09,210 [INFO]  Assuming 5 numeric input columns: Car, Steel, Gas, Electricity, Temp
+2019-04-23 22:51:09,211 [INFO]  Assuming 0 string input columns: 
+2019-04-23 22:51:09,211 [INFO]  Assuming 0 string input columns: 
+2019-04-23 22:51:09,212 [INFO]  No output column name provided for ColumnEncoder using Beer
+2019-04-23 22:51:09,212 [INFO]  No output column name provided for ColumnEncoder using Beer
+2019-04-23 22:51:09,214 [INFO]  Assuming numeric output column: Beer
+2019-04-23 22:51:09,214 [INFO]  Assuming numeric output column: Beer
+2019-04-23 22:51:09,215 [INFO]  Using [[cpu(0)]] as the context for training
+2019-04-23 22:51:09,215 [INFO]  Using [[cpu(0)]] as the context for training
+2019-04-23 22:51:09,215 [INFO]  Using [[cpu(0)]] as the context for training
+2019-04-23 22:51:09,218 [INFO]  Fitting label encoder <class 'datawig.column_encoders.NumericalEncoder'> on 364 rows                             of training data
+2019-04-23 22:51:09,218 [INFO]  Fitting label encoder <class 'datawig.column_encoders.NumericalEncoder'> on 364 rows                             of training data
+2019-04-23 22:51:09,218 [INFO]  Fitting label encoder <class 'datawig.column_encoders.NumericalEncoder'> on 364 rows                             of training data
+2019-04-23 22:51:09,222 [INFO]  Detected 0 rows with missing labels                         for column Beer
+2019-04-23 22:51:09,222 [INFO]  Detected 0 rows with missing labels                         for column Beer
+2019-04-23 22:51:09,222 [INFO]  Detected 0 rows with missing labels                         for column Beer
+2019-04-23 22:51:09,224 [INFO]  Dropping 0/364 rows
+2019-04-23 22:51:09,224 [INFO]  Dropping 0/364 rows
+2019-04-23 22:51:09,224 [INFO]  Dropping 0/364 rows
+2019-04-23 22:51:09,225 [INFO]  Detected 0 rows with missing labels                         for column Beer
+2019-04-23 22:51:09,225 [INFO]  Detected 0 rows with missing labels                         for column Beer
+2019-04-23 22:51:09,225 [INFO]  Detected 0 rows with missing labels                         for column Beer
+2019-04-23 22:51:09,226 [INFO]  Dropping 0/40 rows
+2019-04-23 22:51:09,226 [INFO]  Dropping 0/40 rows
+2019-04-23 22:51:09,226 [INFO]  Dropping 0/40 rows
+2019-04-23 22:51:09,227 [INFO]  Train: 364, Test: 40
+2019-04-23 22:51:09,227 [INFO]  Train: 364, Test: 40
+2019-04-23 22:51:09,227 [INFO]  Train: 364, Test: 40
+2019-04-23 22:51:09,228 [INFO]  Fitting data encoder <class 'datawig.column_encoders.NumericalEncoder'> on columns Car, Steel, Gas, Electricity, Temp and 364 rows of training data with parameters {'input_columns': ['Car', 'Steel', 'Gas', 'Electricity', 'Temp'], 'output_column': 'numerical_features-q6ITZM5jtg', 'output_dim': 5, 'normalize': True, 'scaler': None}
+2019-04-23 22:51:09,228 [INFO]  Fitting data encoder <class 'datawig.column_encoders.NumericalEncoder'> on columns Car, Steel, Gas, Electricity, Temp and 364 rows of training data with parameters {'input_columns': ['Car', 'Steel', 'Gas', 'Electricity', 'Temp'], 'output_column': 'numerical_features-q6ITZM5jtg', 'output_dim': 5, 'normalize': True, 'scaler': None}
+2019-04-23 22:51:09,228 [INFO]  Fitting data encoder <class 'datawig.column_encoders.NumericalEncoder'> on columns Car, Steel, Gas, Electricity, Temp and 364 rows of training data with parameters {'input_columns': ['Car', 'Steel', 'Gas', 'Electricity', 'Temp'], 'output_column': 'numerical_features-q6ITZM5jtg', 'output_dim': 5, 'normalize': True, 'scaler': None}
+2019-04-23 22:51:09,234 [INFO]  Building Train Iterator with 364 elements
+2019-04-23 22:51:09,234 [INFO]  Building Train Iterator with 364 elements
+2019-04-23 22:51:09,234 [INFO]  Building Train Iterator with 364 elements
+2019-04-23 22:51:09,244 [INFO]  Concatenating numeric columns ['Car', 'Steel', 'Gas', 'Electricity', 'Temp'] into numerical_features-q6ITZM5jtg
+2019-04-23 22:51:09,244 [INFO]  Concatenating numeric columns ['Car', 'Steel', 'Gas', 'Electricity', 'Temp'] into numerical_features-q6ITZM5jtg
+2019-04-23 22:51:09,244 [INFO]  Concatenating numeric columns ['Car', 'Steel', 'Gas', 'Electricity', 'Temp'] into numerical_features-q6ITZM5jtg
+2019-04-23 22:51:09,246 [INFO]  Normalizing with StandardScaler
+2019-04-23 22:51:09,246 [INFO]  Normalizing with StandardScaler
+2019-04-23 22:51:09,246 [INFO]  Normalizing with StandardScaler
+2019-04-23 22:51:09,249 [INFO]  Data Encoding - Encoded 365 rows of column                         Car,Steel,Gas,Electricity,Temp with <class 'datawig.column_encoders.NumericalEncoder'> into                         <class 'numpy.ndarray'> of shape (365, 5)                         and then into shape (365, 5)
+2019-04-23 22:51:09,249 [INFO]  Data Encoding - Encoded 365 rows of column                         Car,Steel,Gas,Electricity,Temp with <class 'datawig.column_encoders.NumericalEncoder'> into                         <class 'numpy.ndarray'> of shape (365, 5)                         and then into shape (365, 5)
+2019-04-23 22:51:09,249 [INFO]  Data Encoding - Encoded 365 rows of column                         Car,Steel,Gas,Electricity,Temp with <class 'datawig.column_encoders.NumericalEncoder'> into                         <class 'numpy.ndarray'> of shape (365, 5)                         and then into shape (365, 5)
+2019-04-23 22:51:09,252 [INFO]  Concatenating numeric columns ['Beer'] into Beer
+2019-04-23 22:51:09,252 [INFO]  Concatenating numeric columns ['Beer'] into Beer
+2019-04-23 22:51:09,252 [INFO]  Concatenating numeric columns ['Beer'] into Beer
+2019-04-23 22:51:09,253 [INFO]  Normalizing with StandardScaler
+2019-04-23 22:51:09,253 [INFO]  Normalizing with StandardScaler
+2019-04-23 22:51:09,253 [INFO]  Normalizing with StandardScaler
+2019-04-23 22:51:09,255 [INFO]  Label Encoding - Encoded 365 rows of column                             Beer with <class 'datawig.column_encoders.NumericalEncoder'> into                             <class 'numpy.ndarray'> of shape (365, 1) and                             then into shape (365, 1)
+2019-04-23 22:51:09,255 [INFO]  Label Encoding - Encoded 365 rows of column                             Beer with <class 'datawig.column_encoders.NumericalEncoder'> into                             <class 'numpy.ndarray'> of shape (365, 1) and                             then into shape (365, 1)
+2019-04-23 22:51:09,255 [INFO]  Label Encoding - Encoded 365 rows of column                             Beer with <class 'datawig.column_encoders.NumericalEncoder'> into                             <class 'numpy.ndarray'> of shape (365, 1) and                             then into shape (365, 1)
+2019-04-23 22:51:09,256 [INFO]  Building Test Iterator with 40 elements
+2019-04-23 22:51:09,256 [INFO]  Building Test Iterator with 40 elements
+2019-04-23 22:51:09,256 [INFO]  Building Test Iterator with 40 elements
+2019-04-23 22:51:09,262 [INFO]  Concatenating numeric columns ['Car', 'Steel', 'Gas', 'Electricity', 'Temp'] into numerical_features-q6ITZM5jtg
+2019-04-23 22:51:09,262 [INFO]  Concatenating numeric columns ['Car', 'Steel', 'Gas', 'Electricity', 'Temp'] into numerical_features-q6ITZM5jtg
+2019-04-23 22:51:09,262 [INFO]  Concatenating numeric columns ['Car', 'Steel', 'Gas', 'Electricity', 'Temp'] into numerical_features-q6ITZM5jtg
+2019-04-23 22:51:09,263 [INFO]  Normalizing with StandardScaler
+2019-04-23 22:51:09,263 [INFO]  Normalizing with StandardScaler
+2019-04-23 22:51:09,263 [INFO]  Normalizing with StandardScaler
+2019-04-23 22:51:09,266 [INFO]  Data Encoding - Encoded 40 rows of column                         Car,Steel,Gas,Electricity,Temp with <class 'datawig.column_encoders.NumericalEncoder'> into                         <class 'numpy.ndarray'> of shape (40, 5)                         and then into shape (40, 5)
+2019-04-23 22:51:09,266 [INFO]  Data Encoding - Encoded 40 rows of column                         Car,Steel,Gas,Electricity,Temp with <class 'datawig.column_encoders.NumericalEncoder'> into                         <class 'numpy.ndarray'> of shape (40, 5)                         and then into shape (40, 5)
+2019-04-23 22:51:09,266 [INFO]  Data Encoding - Encoded 40 rows of column                         Car,Steel,Gas,Electricity,Temp with <class 'datawig.column_encoders.NumericalEncoder'> into                         <class 'numpy.ndarray'> of shape (40, 5)                         and then into shape (40, 5)
+2019-04-23 22:51:09,269 [INFO]  Concatenating numeric columns ['Beer'] into Beer
+2019-04-23 22:51:09,269 [INFO]  Concatenating numeric columns ['Beer'] into Beer
+2019-04-23 22:51:09,269 [INFO]  Concatenating numeric columns ['Beer'] into Beer
+2019-04-23 22:51:09,271 [INFO]  Normalizing with StandardScaler
+2019-04-23 22:51:09,271 [INFO]  Normalizing with StandardScaler
+2019-04-23 22:51:09,271 [INFO]  Normalizing with StandardScaler
+2019-04-23 22:51:09,275 [INFO]  Label Encoding - Encoded 40 rows of column                             Beer with <class 'datawig.column_encoders.NumericalEncoder'> into                             <class 'numpy.ndarray'> of shape (40, 1) and                             then into shape (40, 1)
+2019-04-23 22:51:09,275 [INFO]  Label Encoding - Encoded 40 rows of column                             Beer with <class 'datawig.column_encoders.NumericalEncoder'> into                             <class 'numpy.ndarray'> of shape (40, 1) and                             then into shape (40, 1)
+2019-04-23 22:51:09,275 [INFO]  Label Encoding - Encoded 40 rows of column                             Beer with <class 'datawig.column_encoders.NumericalEncoder'> into                             <class 'numpy.ndarray'> of shape (40, 1) and                             then into shape (40, 1)
+2019-04-23 22:51:09,277 [INFO]  Concatenating all 1 latent symbols
+2019-04-23 22:51:09,277 [INFO]  Concatenating all 1 latent symbols
+2019-04-23 22:51:09,277 [INFO]  Concatenating all 1 latent symbols
+2019-04-23 22:51:09,279 [INFO]  Constructing numerical loss for column Beer
+2019-04-23 22:51:09,279 [INFO]  Constructing numerical loss for column Beer
+2019-04-23 22:51:09,279 [INFO]  Constructing numerical loss for column Beer
+2019-04-23 22:51:09,283 [INFO]  Building output symbols
+2019-04-23 22:51:09,283 [INFO]  Building output symbols
+2019-04-23 22:51:09,283 [INFO]  Building output symbols
+2019-04-23 22:51:09,289 [INFO]  
+========== start: fit model
+2019-04-23 22:51:09,289 [INFO]  
+========== start: fit model
+2019-04-23 22:51:09,289 [INFO]  
+========== start: fit model
+2019-04-23 22:51:09,290 [WARNING]  Already bound, ignoring bind()
+2019-04-23 22:51:09,290 [WARNING]  Already bound, ignoring bind()
+2019-04-23 22:51:09,290 [WARNING]  Already bound, ignoring bind()
+2019-04-23 22:51:09,338 [INFO]  Epoch[0] Batch [0-37]	Speed: 4293.16 samples/sec	cross-entropy=3.298014	Beer-accuracy=0.000000
+2019-04-23 22:51:09,338 [INFO]  Epoch[0] Batch [0-37]	Speed: 4293.16 samples/sec	cross-entropy=3.298014	Beer-accuracy=0.000000
+2019-04-23 22:51:09,338 [INFO]  Epoch[0] Batch [0-37]	Speed: 4293.16 samples/sec	cross-entropy=3.298014	Beer-accuracy=0.000000
+2019-04-23 22:51:09,379 [INFO]  Epoch[0] Train-cross-entropy=2.335126
+2019-04-23 22:51:09,379 [INFO]  Epoch[0] Train-cross-entropy=2.335126
+2019-04-23 22:51:09,379 [INFO]  Epoch[0] Train-cross-entropy=2.335126
+2019-04-23 22:51:09,380 [INFO]  Epoch[0] Train-Beer-accuracy=0.000000
+2019-04-23 22:51:09,380 [INFO]  Epoch[0] Train-Beer-accuracy=0.000000
+2019-04-23 22:51:09,380 [INFO]  Epoch[0] Train-Beer-accuracy=0.000000
+2019-04-23 22:51:09,381 [INFO]  Epoch[0] Time cost=0.088
+2019-04-23 22:51:09,381 [INFO]  Epoch[0] Time cost=0.088
+2019-04-23 22:51:09,381 [INFO]  Epoch[0] Time cost=0.088
+2019-04-23 22:51:09,384 [INFO]  Saved checkpoint to "imputer_model/model-0000.params"
+2019-04-23 22:51:09,384 [INFO]  Saved checkpoint to "imputer_model/model-0000.params"
+2019-04-23 22:51:09,384 [INFO]  Saved checkpoint to "imputer_model/model-0000.params"
+2019-04-23 22:51:09,388 [INFO]  Epoch[0] Validation-cross-entropy=1.552503
+2019-04-23 22:51:09,388 [INFO]  Epoch[0] Validation-cross-entropy=1.552503
+2019-04-23 22:51:09,388 [INFO]  Epoch[0] Validation-cross-entropy=1.552503
+2019-04-23 22:51:09,390 [INFO]  Epoch[0] Validation-Beer-accuracy=0.000000
+2019-04-23 22:51:09,390 [INFO]  Epoch[0] Validation-Beer-accuracy=0.000000
+2019-04-23 22:51:09,390 [INFO]  Epoch[0] Validation-Beer-accuracy=0.000000
+2019-04-23 22:51:09,432 [INFO]  Epoch[1] Batch [0-37]	Speed: 4901.31 samples/sec	cross-entropy=1.141511	Beer-accuracy=0.000000
+2019-04-23 22:51:09,432 [INFO]  Epoch[1] Batch [0-37]	Speed: 4901.31 samples/sec	cross-entropy=1.141511	Beer-accuracy=0.000000
+2019-04-23 22:51:09,432 [INFO]  Epoch[1] Batch [0-37]	Speed: 4901.31 samples/sec	cross-entropy=1.141511	Beer-accuracy=0.000000
+2019-04-23 22:51:09,462 [INFO]  Epoch[1] Train-cross-entropy=1.068959
+2019-04-23 22:51:09,462 [INFO]  Epoch[1] Train-cross-entropy=1.068959
+2019-04-23 22:51:09,462 [INFO]  Epoch[1] Train-cross-entropy=1.068959
+2019-04-23 22:51:09,462 [INFO]  Epoch[1] Train-Beer-accuracy=0.000000
+2019-04-23 22:51:09,462 [INFO]  Epoch[1] Train-Beer-accuracy=0.000000
+2019-04-23 22:51:09,462 [INFO]  Epoch[1] Train-Beer-accuracy=0.000000
+2019-04-23 22:51:09,463 [INFO]  Epoch[1] Time cost=0.070
+2019-04-23 22:51:09,463 [INFO]  Epoch[1] Time cost=0.070
+2019-04-23 22:51:09,463 [INFO]  Epoch[1] Time cost=0.070
+2019-04-23 22:51:09,466 [INFO]  Saved checkpoint to "imputer_model/model-0001.params"
+2019-04-23 22:51:09,466 [INFO]  Saved checkpoint to "imputer_model/model-0001.params"
+2019-04-23 22:51:09,466 [INFO]  Saved checkpoint to "imputer_model/model-0001.params"
+2019-04-23 22:51:09,470 [INFO]  Epoch[1] Validation-cross-entropy=1.424673
+2019-04-23 22:51:09,470 [INFO]  Epoch[1] Validation-cross-entropy=1.424673
+2019-04-23 22:51:09,470 [INFO]  Epoch[1] Validation-cross-entropy=1.424673
+2019-04-23 22:51:09,471 [INFO]  Epoch[1] Validation-Beer-accuracy=0.000000
+2019-04-23 22:51:09,471 [INFO]  Epoch[1] Validation-Beer-accuracy=0.000000
+2019-04-23 22:51:09,471 [INFO]  Epoch[1] Validation-Beer-accuracy=0.000000
+2019-04-23 22:51:09,505 [INFO]  Epoch[2] Batch [0-37]	Speed: 5876.73 samples/sec	cross-entropy=1.101421	Beer-accuracy=0.000000
+2019-04-23 22:51:09,505 [INFO]  Epoch[2] Batch [0-37]	Speed: 5876.73 samples/sec	cross-entropy=1.101421	Beer-accuracy=0.000000
+2019-04-23 22:51:09,505 [INFO]  Epoch[2] Batch [0-37]	Speed: 5876.73 samples/sec	cross-entropy=1.101421	Beer-accuracy=0.000000
+2019-04-23 22:51:09,531 [INFO]  Epoch[2] Train-cross-entropy=1.030739
+2019-04-23 22:51:09,531 [INFO]  Epoch[2] Train-cross-entropy=1.030739
+2019-04-23 22:51:09,531 [INFO]  Epoch[2] Train-cross-entropy=1.030739
+2019-04-23 22:51:09,532 [INFO]  Epoch[2] Train-Beer-accuracy=0.000000
+2019-04-23 22:51:09,532 [INFO]  Epoch[2] Train-Beer-accuracy=0.000000
+2019-04-23 22:51:09,532 [INFO]  Epoch[2] Train-Beer-accuracy=0.000000
+2019-04-23 22:51:09,533 [INFO]  Epoch[2] Time cost=0.061
+2019-04-23 22:51:09,533 [INFO]  Epoch[2] Time cost=0.061
+2019-04-23 22:51:09,533 [INFO]  Epoch[2] Time cost=0.061
+2019-04-23 22:51:09,537 [INFO]  Saved checkpoint to "imputer_model/model-0002.params"
+2019-04-23 22:51:09,537 [INFO]  Saved checkpoint to "imputer_model/model-0002.params"
+2019-04-23 22:51:09,537 [INFO]  Saved checkpoint to "imputer_model/model-0002.params"
+2019-04-23 22:51:09,541 [INFO]  Epoch[2] Validation-cross-entropy=1.405218
+2019-04-23 22:51:09,541 [INFO]  Epoch[2] Validation-cross-entropy=1.405218
+2019-04-23 22:51:09,541 [INFO]  Epoch[2] Validation-cross-entropy=1.405218
+2019-04-23 22:51:09,542 [INFO]  Epoch[2] Validation-Beer-accuracy=0.000000
+2019-04-23 22:51:09,542 [INFO]  Epoch[2] Validation-Beer-accuracy=0.000000
+2019-04-23 22:51:09,542 [INFO]  Epoch[2] Validation-Beer-accuracy=0.000000
+2019-04-23 22:51:09,575 [INFO]  Epoch[3] Batch [0-37]	Speed: 6018.96 samples/sec	cross-entropy=1.080938	Beer-accuracy=0.000000
+2019-04-23 22:51:09,575 [INFO]  Epoch[3] Batch [0-37]	Speed: 6018.96 samples/sec	cross-entropy=1.080938	Beer-accuracy=0.000000
+2019-04-23 22:51:09,575 [INFO]  Epoch[3] Batch [0-37]	Speed: 6018.96 samples/sec	cross-entropy=1.080938	Beer-accuracy=0.000000
+2019-04-23 22:51:09,602 [INFO]  Epoch[3] Train-cross-entropy=1.011411
+2019-04-23 22:51:09,602 [INFO]  Epoch[3] Train-cross-entropy=1.011411
+2019-04-23 22:51:09,602 [INFO]  Epoch[3] Train-cross-entropy=1.011411
+2019-04-23 22:51:09,603 [INFO]  Epoch[3] Train-Beer-accuracy=0.000000
+2019-04-23 22:51:09,603 [INFO]  Epoch[3] Train-Beer-accuracy=0.000000
+2019-04-23 22:51:09,603 [INFO]  Epoch[3] Train-Beer-accuracy=0.000000
+2019-04-23 22:51:09,603 [INFO]  Epoch[3] Time cost=0.061
+2019-04-23 22:51:09,603 [INFO]  Epoch[3] Time cost=0.061
+2019-04-23 22:51:09,603 [INFO]  Epoch[3] Time cost=0.061
+2019-04-23 22:51:09,607 [INFO]  Saved checkpoint to "imputer_model/model-0003.params"
+2019-04-23 22:51:09,607 [INFO]  Saved checkpoint to "imputer_model/model-0003.params"
+2019-04-23 22:51:09,607 [INFO]  Saved checkpoint to "imputer_model/model-0003.params"
+2019-04-23 22:51:09,612 [INFO]  Epoch[3] Validation-cross-entropy=1.404162
+2019-04-23 22:51:09,612 [INFO]  Epoch[3] Validation-cross-entropy=1.404162
+2019-04-23 22:51:09,612 [INFO]  Epoch[3] Validation-cross-entropy=1.404162
+2019-04-23 22:51:09,612 [INFO]  Epoch[3] Validation-Beer-accuracy=0.000000
+2019-04-23 22:51:09,612 [INFO]  Epoch[3] Validation-Beer-accuracy=0.000000
+2019-04-23 22:51:09,612 [INFO]  Epoch[3] Validation-Beer-accuracy=0.000000
+2019-04-23 22:51:09,645 [INFO]  Epoch[4] Batch [0-37]	Speed: 6222.65 samples/sec	cross-entropy=1.059748	Beer-accuracy=0.000000
+2019-04-23 22:51:09,645 [INFO]  Epoch[4] Batch [0-37]	Speed: 6222.65 samples/sec	cross-entropy=1.059748	Beer-accuracy=0.000000
+2019-04-23 22:51:09,645 [INFO]  Epoch[4] Batch [0-37]	Speed: 6222.65 samples/sec	cross-entropy=1.059748	Beer-accuracy=0.000000
+2019-04-23 22:51:09,672 [INFO]  Epoch[4] Train-cross-entropy=0.993217
+2019-04-23 22:51:09,672 [INFO]  Epoch[4] Train-cross-entropy=0.993217
+2019-04-23 22:51:09,672 [INFO]  Epoch[4] Train-cross-entropy=0.993217
+2019-04-23 22:51:09,672 [INFO]  Epoch[4] Train-Beer-accuracy=0.000000
+2019-04-23 22:51:09,672 [INFO]  Epoch[4] Train-Beer-accuracy=0.000000
+2019-04-23 22:51:09,672 [INFO]  Epoch[4] Train-Beer-accuracy=0.000000
+2019-04-23 22:51:09,673 [INFO]  Epoch[4] Time cost=0.060
+2019-04-23 22:51:09,673 [INFO]  Epoch[4] Time cost=0.060
+2019-04-23 22:51:09,673 [INFO]  Epoch[4] Time cost=0.060
+2019-04-23 22:51:09,676 [INFO]  Saved checkpoint to "imputer_model/model-0004.params"
+2019-04-23 22:51:09,676 [INFO]  Saved checkpoint to "imputer_model/model-0004.params"
+2019-04-23 22:51:09,676 [INFO]  Saved checkpoint to "imputer_model/model-0004.params"
+2019-04-23 22:51:09,679 [INFO]  Epoch[4] Validation-cross-entropy=1.408519
+2019-04-23 22:51:09,679 [INFO]  Epoch[4] Validation-cross-entropy=1.408519
+2019-04-23 22:51:09,679 [INFO]  Epoch[4] Validation-cross-entropy=1.408519
+2019-04-23 22:51:09,681 [INFO]  Epoch[4] Validation-Beer-accuracy=0.000000
+2019-04-23 22:51:09,681 [INFO]  Epoch[4] Validation-Beer-accuracy=0.000000
+2019-04-23 22:51:09,681 [INFO]  Epoch[4] Validation-Beer-accuracy=0.000000
+2019-04-23 22:51:09,712 [INFO]  Epoch[5] Batch [0-37]	Speed: 6216.37 samples/sec	cross-entropy=1.040715	Beer-accuracy=0.000000
+2019-04-23 22:51:09,712 [INFO]  Epoch[5] Batch [0-37]	Speed: 6216.37 samples/sec	cross-entropy=1.040715	Beer-accuracy=0.000000
+2019-04-23 22:51:09,712 [INFO]  Epoch[5] Batch [0-37]	Speed: 6216.37 samples/sec	cross-entropy=1.040715	Beer-accuracy=0.000000
+2019-04-23 22:51:09,740 [INFO]  Epoch[5] Train-cross-entropy=0.976720
+2019-04-23 22:51:09,740 [INFO]  Epoch[5] Train-cross-entropy=0.976720
+2019-04-23 22:51:09,740 [INFO]  Epoch[5] Train-cross-entropy=0.976720
+2019-04-23 22:51:09,741 [INFO]  Epoch[5] Train-Beer-accuracy=0.000000
+2019-04-23 22:51:09,741 [INFO]  Epoch[5] Train-Beer-accuracy=0.000000
+2019-04-23 22:51:09,741 [INFO]  Epoch[5] Train-Beer-accuracy=0.000000
+2019-04-23 22:51:09,742 [INFO]  Epoch[5] Time cost=0.060
+2019-04-23 22:51:09,742 [INFO]  Epoch[5] Time cost=0.060
+2019-04-23 22:51:09,742 [INFO]  Epoch[5] Time cost=0.060
+2019-04-23 22:51:09,744 [INFO]  Saved checkpoint to "imputer_model/model-0005.params"
+2019-04-23 22:51:09,744 [INFO]  Saved checkpoint to "imputer_model/model-0005.params"
+2019-04-23 22:51:09,744 [INFO]  Saved checkpoint to "imputer_model/model-0005.params"
+2019-04-23 22:51:09,748 [INFO]  No improvement detected for 3 epochs compared to 1.4052176885306835 last error obtained: 1.413248471915722, stopping here
+2019-04-23 22:51:09,748 [INFO]  No improvement detected for 3 epochs compared to 1.4052176885306835 last error obtained: 1.413248471915722, stopping here
+2019-04-23 22:51:09,748 [INFO]  No improvement detected for 3 epochs compared to 1.4052176885306835 last error obtained: 1.413248471915722, stopping here
+2019-04-23 22:51:09,749 [INFO]  Stopping training, patience reached
+2019-04-23 22:51:09,749 [INFO]  Stopping training, patience reached
+2019-04-23 22:51:09,749 [INFO]  Stopping training, patience reached
+2019-04-23 22:51:09,750 [INFO]  
+========== done (0.46146082878112793 s) fit model
+2019-04-23 22:51:09,750 [INFO]  
+========== done (0.46146082878112793 s) fit model
+2019-04-23 22:51:09,750 [INFO]  
+========== done (0.46146082878112793 s) fit model
+2019-04-23 22:51:09,757 [INFO]  Expected calibration error: 100.0%
+2019-04-23 22:51:09,757 [INFO]  Expected calibration error: 100.0%
+2019-04-23 22:51:09,757 [INFO]  Expected calibration error: 100.0%
+2019-04-23 22:51:09,761 [INFO]  Expected calibration error after calibration: 100.0%
+2019-04-23 22:51:09,761 [INFO]  Expected calibration error after calibration: 100.0%
+2019-04-23 22:51:09,761 [INFO]  Expected calibration error after calibration: 100.0%
+2019-04-23 22:51:09,770 [INFO]  save metrics in imputer_model/fit-test-metrics.json
+2019-04-23 22:51:09,770 [INFO]  save metrics in imputer_model/fit-test-metrics.json
+2019-04-23 22:51:09,770 [INFO]  save metrics in imputer_model/fit-test-metrics.json
+2019-04-23 22:51:09,772 [INFO]  Keeping imputer_model/model-0003.params
+2019-04-23 22:51:09,772 [INFO]  Keeping imputer_model/model-0003.params
+2019-04-23 22:51:09,772 [INFO]  Keeping imputer_model/model-0003.params
+2019-04-23 22:51:09,773 [INFO]  Deleting imputer_model/model-0002.params
+2019-04-23 22:51:09,773 [INFO]  Deleting imputer_model/model-0002.params
+2019-04-23 22:51:09,773 [INFO]  Deleting imputer_model/model-0002.params
+2019-04-23 22:51:09,774 [INFO]  Deleting imputer_model/model-0000.params
+2019-04-23 22:51:09,774 [INFO]  Deleting imputer_model/model-0000.params
+2019-04-23 22:51:09,774 [INFO]  Deleting imputer_model/model-0000.params
+2019-04-23 22:51:09,776 [INFO]  Deleting imputer_model/model-0004.params
+2019-04-23 22:51:09,776 [INFO]  Deleting imputer_model/model-0004.params
+2019-04-23 22:51:09,776 [INFO]  Deleting imputer_model/model-0004.params
+2019-04-23 22:51:09,777 [INFO]  Deleting imputer_model/model-0005.params
+2019-04-23 22:51:09,777 [INFO]  Deleting imputer_model/model-0005.params
+2019-04-23 22:51:09,777 [INFO]  Deleting imputer_model/model-0005.params
+2019-04-23 22:51:09,778 [INFO]  Deleting imputer_model/model-0001.params
+2019-04-23 22:51:09,778 [INFO]  Deleting imputer_model/model-0001.params
+2019-04-23 22:51:09,778 [INFO]  Deleting imputer_model/model-0001.params
+2019-04-23 22:51:11,473 [INFO]  Concatenating numeric columns ['Car', 'Steel', 'Gas', 'Electricity', 'Temp'] into numerical_features-q6ITZM5jtg
+2019-04-23 22:51:11,473 [INFO]  Concatenating numeric columns ['Car', 'Steel', 'Gas', 'Electricity', 'Temp'] into numerical_features-q6ITZM5jtg
+2019-04-23 22:51:11,473 [INFO]  Concatenating numeric columns ['Car', 'Steel', 'Gas', 'Electricity', 'Temp'] into numerical_features-q6ITZM5jtg
+2019-04-23 22:51:11,474 [INFO]  Normalizing with StandardScaler
+2019-04-23 22:51:11,474 [INFO]  Normalizing with StandardScaler
+2019-04-23 22:51:11,474 [INFO]  Normalizing with StandardScaler
+2019-04-23 22:51:11,477 [INFO]  Data Encoding - Encoded 435 rows of column                         Car,Steel,Gas,Electricity,Temp with <class 'datawig.column_encoders.NumericalEncoder'> into                         <class 'numpy.ndarray'> of shape (435, 5)                         and then into shape (435, 5)
+2019-04-23 22:51:11,477 [INFO]  Data Encoding - Encoded 435 rows of column                         Car,Steel,Gas,Electricity,Temp with <class 'datawig.column_encoders.NumericalEncoder'> into                         <class 'numpy.ndarray'> of shape (435, 5)                         and then into shape (435, 5)
+2019-04-23 22:51:11,477 [INFO]  Data Encoding - Encoded 435 rows of column                         Car,Steel,Gas,Electricity,Temp with <class 'datawig.column_encoders.NumericalEncoder'> into                         <class 'numpy.ndarray'> of shape (435, 5)                         and then into shape (435, 5)
+2019-04-23 22:51:11,479 [INFO]  Concatenating numeric columns ['Beer'] into Beer
+2019-04-23 22:51:11,479 [INFO]  Concatenating numeric columns ['Beer'] into Beer
+2019-04-23 22:51:11,479 [INFO]  Concatenating numeric columns ['Beer'] into Beer
+2019-04-23 22:51:11,480 [INFO]  Normalizing with StandardScaler
+2019-04-23 22:51:11,480 [INFO]  Normalizing with StandardScaler
+2019-04-23 22:51:11,480 [INFO]  Normalizing with StandardScaler
+2019-04-23 22:51:11,483 [INFO]  Label Encoding - Encoded 435 rows of column                             Beer with <class 'datawig.column_encoders.NumericalEncoder'> into                             <class 'numpy.ndarray'> of shape (435, 1) and                             then into shape (435, 1)
+2019-04-23 22:51:11,483 [INFO]  Label Encoding - Encoded 435 rows of column                             Beer with <class 'datawig.column_encoders.NumericalEncoder'> into                             <class 'numpy.ndarray'> of shape (435, 1) and                             then into shape (435, 1)
+2019-04-23 22:51:11,483 [INFO]  Label Encoding - Encoded 435 rows of column                             Beer with <class 'datawig.column_encoders.NumericalEncoder'> into                             <class 'numpy.ndarray'> of shape (435, 1) and                             then into shape (435, 1)
+2019-04-23 22:51:11,520 [INFO]  Top-k only for CategoricalEncoder, dropping Beer, <class 'datawig.column_encoders.NumericalEncoder'>
+2019-04-23 22:51:11,520 [INFO]  Top-k only for CategoricalEncoder, dropping Beer, <class 'datawig.column_encoders.NumericalEncoder'>
+2019-04-23 22:51:11,520 [INFO]  Top-k only for CategoricalEncoder, dropping Beer, <class 'datawig.column_encoders.NumericalEncoder'>
+2019-04-23 22:51:11,521 [INFO]  Precision filtering only for CategoricalEncoder returning                             Beer unfiltered
+2019-04-23 22:51:11,521 [INFO]  Precision filtering only for CategoricalEncoder returning                             Beer unfiltered
+2019-04-23 22:51:11,521 [INFO]  Precision filtering only for CategoricalEncoder returning                             Beer unfiltered
+2019-04-23 22:51:34,545 [INFO]  Assuming 5 numeric input columns: Beer, Steel, Gas, Electricity, Temp
+2019-04-23 22:51:34,545 [INFO]  Assuming 5 numeric input columns: Beer, Steel, Gas, Electricity, Temp
+2019-04-23 22:51:34,545 [INFO]  Assuming 5 numeric input columns: Beer, Steel, Gas, Electricity, Temp
+2019-04-23 22:51:34,547 [INFO]  Assuming 0 string input columns: 
+2019-04-23 22:51:34,547 [INFO]  Assuming 0 string input columns: 
+2019-04-23 22:51:34,547 [INFO]  Assuming 0 string input columns: 
+2019-04-23 22:51:34,548 [INFO]  No output column name provided for ColumnEncoder using Car
+2019-04-23 22:51:34,548 [INFO]  No output column name provided for ColumnEncoder using Car
+2019-04-23 22:51:34,548 [INFO]  No output column name provided for ColumnEncoder using Car
+2019-04-23 22:51:34,549 [INFO]  Assuming numeric output column: Car
+2019-04-23 22:51:34,549 [INFO]  Assuming numeric output column: Car
+2019-04-23 22:51:34,549 [INFO]  Assuming numeric output column: Car
+2019-04-23 22:51:34,551 [INFO]  Using [[cpu(0)]] as the context for training
+2019-04-23 22:51:34,551 [INFO]  Using [[cpu(0)]] as the context for training
+2019-04-23 22:51:34,551 [INFO]  Using [[cpu(0)]] as the context for training
+2019-04-23 22:51:34,551 [INFO]  Using [[cpu(0)]] as the context for training
+2019-04-23 22:51:34,554 [INFO]  Fitting label encoder <class 'datawig.column_encoders.NumericalEncoder'> on 332 rows                             of training data
+2019-04-23 22:51:34,554 [INFO]  Fitting label encoder <class 'datawig.column_encoders.NumericalEncoder'> on 332 rows                             of training data
+2019-04-23 22:51:34,554 [INFO]  Fitting label encoder <class 'datawig.column_encoders.NumericalEncoder'> on 332 rows                             of training data
+2019-04-23 22:51:34,554 [INFO]  Fitting label encoder <class 'datawig.column_encoders.NumericalEncoder'> on 332 rows                             of training data
+2019-04-23 22:51:34,558 [INFO]  Detected 0 rows with missing labels                         for column Car
+2019-04-23 22:51:34,558 [INFO]  Detected 0 rows with missing labels                         for column Car
+2019-04-23 22:51:34,558 [INFO]  Detected 0 rows with missing labels                         for column Car
+2019-04-23 22:51:34,558 [INFO]  Detected 0 rows with missing labels                         for column Car
+2019-04-23 22:51:34,559 [INFO]  Dropping 0/332 rows
+2019-04-23 22:51:34,559 [INFO]  Dropping 0/332 rows
+2019-04-23 22:51:34,559 [INFO]  Dropping 0/332 rows
+2019-04-23 22:51:34,559 [INFO]  Dropping 0/332 rows
+2019-04-23 22:51:34,561 [INFO]  Detected 0 rows with missing labels                         for column Car
+2019-04-23 22:51:34,561 [INFO]  Detected 0 rows with missing labels                         for column Car
+2019-04-23 22:51:34,561 [INFO]  Detected 0 rows with missing labels                         for column Car
+2019-04-23 22:51:34,561 [INFO]  Detected 0 rows with missing labels                         for column Car
+2019-04-23 22:51:34,562 [INFO]  Dropping 0/36 rows
+2019-04-23 22:51:34,562 [INFO]  Dropping 0/36 rows
+2019-04-23 22:51:34,562 [INFO]  Dropping 0/36 rows
+2019-04-23 22:51:34,562 [INFO]  Dropping 0/36 rows
+2019-04-23 22:51:34,563 [INFO]  Train: 332, Test: 36
+2019-04-23 22:51:34,563 [INFO]  Train: 332, Test: 36
+2019-04-23 22:51:34,563 [INFO]  Train: 332, Test: 36
+2019-04-23 22:51:34,563 [INFO]  Train: 332, Test: 36
+2019-04-23 22:51:34,565 [INFO]  Fitting data encoder <class 'datawig.column_encoders.NumericalEncoder'> on columns Beer, Steel, Gas, Electricity, Temp and 332 rows of training data with parameters {'input_columns': ['Beer', 'Steel', 'Gas', 'Electricity', 'Temp'], 'output_column': 'numerical_features-Ue52RvEJgw', 'output_dim': 5, 'normalize': True, 'scaler': None}
+2019-04-23 22:51:34,565 [INFO]  Fitting data encoder <class 'datawig.column_encoders.NumericalEncoder'> on columns Beer, Steel, Gas, Electricity, Temp and 332 rows of training data with parameters {'input_columns': ['Beer', 'Steel', 'Gas', 'Electricity', 'Temp'], 'output_column': 'numerical_features-Ue52RvEJgw', 'output_dim': 5, 'normalize': True, 'scaler': None}
+2019-04-23 22:51:34,565 [INFO]  Fitting data encoder <class 'datawig.column_encoders.NumericalEncoder'> on columns Beer, Steel, Gas, Electricity, Temp and 332 rows of training data with parameters {'input_columns': ['Beer', 'Steel', 'Gas', 'Electricity', 'Temp'], 'output_column': 'numerical_features-Ue52RvEJgw', 'output_dim': 5, 'normalize': True, 'scaler': None}
+2019-04-23 22:51:34,565 [INFO]  Fitting data encoder <class 'datawig.column_encoders.NumericalEncoder'> on columns Beer, Steel, Gas, Electricity, Temp and 332 rows of training data with parameters {'input_columns': ['Beer', 'Steel', 'Gas', 'Electricity', 'Temp'], 'output_column': 'numerical_features-Ue52RvEJgw', 'output_dim': 5, 'normalize': True, 'scaler': None}
+2019-04-23 22:51:34,573 [INFO]  Building Train Iterator with 332 elements
+2019-04-23 22:51:34,573 [INFO]  Building Train Iterator with 332 elements
+2019-04-23 22:51:34,573 [INFO]  Building Train Iterator with 332 elements
+2019-04-23 22:51:34,573 [INFO]  Building Train Iterator with 332 elements
+2019-04-23 22:51:34,592 [INFO]  Concatenating numeric columns ['Beer', 'Steel', 'Gas', 'Electricity', 'Temp'] into numerical_features-Ue52RvEJgw
+2019-04-23 22:51:34,592 [INFO]  Concatenating numeric columns ['Beer', 'Steel', 'Gas', 'Electricity', 'Temp'] into numerical_features-Ue52RvEJgw
+2019-04-23 22:51:34,592 [INFO]  Concatenating numeric columns ['Beer', 'Steel', 'Gas', 'Electricity', 'Temp'] into numerical_features-Ue52RvEJgw
+2019-04-23 22:51:34,592 [INFO]  Concatenating numeric columns ['Beer', 'Steel', 'Gas', 'Electricity', 'Temp'] into numerical_features-Ue52RvEJgw
+2019-04-23 22:51:34,593 [INFO]  Normalizing with StandardScaler
+2019-04-23 22:51:34,593 [INFO]  Normalizing with StandardScaler
+2019-04-23 22:51:34,593 [INFO]  Normalizing with StandardScaler
+2019-04-23 22:51:34,593 [INFO]  Normalizing with StandardScaler
+2019-04-23 22:51:34,595 [INFO]  Data Encoding - Encoded 336 rows of column                         Beer,Steel,Gas,Electricity,Temp with <class 'datawig.column_encoders.NumericalEncoder'> into                         <class 'numpy.ndarray'> of shape (336, 5)                         and then into shape (336, 5)
+2019-04-23 22:51:34,595 [INFO]  Data Encoding - Encoded 336 rows of column                         Beer,Steel,Gas,Electricity,Temp with <class 'datawig.column_encoders.NumericalEncoder'> into                         <class 'numpy.ndarray'> of shape (336, 5)                         and then into shape (336, 5)
+2019-04-23 22:51:34,595 [INFO]  Data Encoding - Encoded 336 rows of column                         Beer,Steel,Gas,Electricity,Temp with <class 'datawig.column_encoders.NumericalEncoder'> into                         <class 'numpy.ndarray'> of shape (336, 5)                         and then into shape (336, 5)
+2019-04-23 22:51:34,595 [INFO]  Data Encoding - Encoded 336 rows of column                         Beer,Steel,Gas,Electricity,Temp with <class 'datawig.column_encoders.NumericalEncoder'> into                         <class 'numpy.ndarray'> of shape (336, 5)                         and then into shape (336, 5)
+2019-04-23 22:51:34,598 [INFO]  Concatenating numeric columns ['Car'] into Car
+2019-04-23 22:51:34,598 [INFO]  Concatenating numeric columns ['Car'] into Car
+2019-04-23 22:51:34,598 [INFO]  Concatenating numeric columns ['Car'] into Car
+2019-04-23 22:51:34,598 [INFO]  Concatenating numeric columns ['Car'] into Car
+2019-04-23 22:51:34,599 [INFO]  Normalizing with StandardScaler
+2019-04-23 22:51:34,599 [INFO]  Normalizing with StandardScaler
+2019-04-23 22:51:34,599 [INFO]  Normalizing with StandardScaler
+2019-04-23 22:51:34,599 [INFO]  Normalizing with StandardScaler
+2019-04-23 22:51:34,602 [INFO]  Label Encoding - Encoded 336 rows of column                             Car with <class 'datawig.column_encoders.NumericalEncoder'> into                             <class 'numpy.ndarray'> of shape (336, 1) and                             then into shape (336, 1)
+2019-04-23 22:51:34,602 [INFO]  Label Encoding - Encoded 336 rows of column                             Car with <class 'datawig.column_encoders.NumericalEncoder'> into                             <class 'numpy.ndarray'> of shape (336, 1) and                             then into shape (336, 1)
+2019-04-23 22:51:34,602 [INFO]  Label Encoding - Encoded 336 rows of column                             Car with <class 'datawig.column_encoders.NumericalEncoder'> into                             <class 'numpy.ndarray'> of shape (336, 1) and                             then into shape (336, 1)
+2019-04-23 22:51:34,602 [INFO]  Label Encoding - Encoded 336 rows of column                             Car with <class 'datawig.column_encoders.NumericalEncoder'> into                             <class 'numpy.ndarray'> of shape (336, 1) and                             then into shape (336, 1)
+2019-04-23 22:51:34,605 [INFO]  Building Test Iterator with 36 elements
+2019-04-23 22:51:34,605 [INFO]  Building Test Iterator with 36 elements
+2019-04-23 22:51:34,605 [INFO]  Building Test Iterator with 36 elements
+2019-04-23 22:51:34,605 [INFO]  Building Test Iterator with 36 elements
+2019-04-23 22:51:34,629 [INFO]  Concatenating numeric columns ['Beer', 'Steel', 'Gas', 'Electricity', 'Temp'] into numerical_features-Ue52RvEJgw
+2019-04-23 22:51:34,629 [INFO]  Concatenating numeric columns ['Beer', 'Steel', 'Gas', 'Electricity', 'Temp'] into numerical_features-Ue52RvEJgw
+2019-04-23 22:51:34,629 [INFO]  Concatenating numeric columns ['Beer', 'Steel', 'Gas', 'Electricity', 'Temp'] into numerical_features-Ue52RvEJgw
+2019-04-23 22:51:34,629 [INFO]  Concatenating numeric columns ['Beer', 'Steel', 'Gas', 'Electricity', 'Temp'] into numerical_features-Ue52RvEJgw
+2019-04-23 22:51:34,630 [INFO]  Normalizing with StandardScaler
+2019-04-23 22:51:34,630 [INFO]  Normalizing with StandardScaler
+2019-04-23 22:51:34,630 [INFO]  Normalizing with StandardScaler
+2019-04-23 22:51:34,630 [INFO]  Normalizing with StandardScaler
+2019-04-23 22:51:34,632 [INFO]  Data Encoding - Encoded 48 rows of column                         Beer,Steel,Gas,Electricity,Temp with <class 'datawig.column_encoders.NumericalEncoder'> into                         <class 'numpy.ndarray'> of shape (48, 5)                         and then into shape (48, 5)
+2019-04-23 22:51:34,632 [INFO]  Data Encoding - Encoded 48 rows of column                         Beer,Steel,Gas,Electricity,Temp with <class 'datawig.column_encoders.NumericalEncoder'> into                         <class 'numpy.ndarray'> of shape (48, 5)                         and then into shape (48, 5)
+2019-04-23 22:51:34,632 [INFO]  Data Encoding - Encoded 48 rows of column                         Beer,Steel,Gas,Electricity,Temp with <class 'datawig.column_encoders.NumericalEncoder'> into                         <class 'numpy.ndarray'> of shape (48, 5)                         and then into shape (48, 5)
+2019-04-23 22:51:34,632 [INFO]  Data Encoding - Encoded 48 rows of column                         Beer,Steel,Gas,Electricity,Temp with <class 'datawig.column_encoders.NumericalEncoder'> into                         <class 'numpy.ndarray'> of shape (48, 5)                         and then into shape (48, 5)
+2019-04-23 22:51:34,635 [INFO]  Concatenating numeric columns ['Car'] into Car
+2019-04-23 22:51:34,635 [INFO]  Concatenating numeric columns ['Car'] into Car
+2019-04-23 22:51:34,635 [INFO]  Concatenating numeric columns ['Car'] into Car
+2019-04-23 22:51:34,635 [INFO]  Concatenating numeric columns ['Car'] into Car
+2019-04-23 22:51:34,636 [INFO]  Normalizing with StandardScaler
+2019-04-23 22:51:34,636 [INFO]  Normalizing with StandardScaler
+2019-04-23 22:51:34,636 [INFO]  Normalizing with StandardScaler
+2019-04-23 22:51:34,636 [INFO]  Normalizing with StandardScaler
+2019-04-23 22:51:34,638 [INFO]  Label Encoding - Encoded 48 rows of column                             Car with <class 'datawig.column_encoders.NumericalEncoder'> into                             <class 'numpy.ndarray'> of shape (48, 1) and                             then into shape (48, 1)
+2019-04-23 22:51:34,638 [INFO]  Label Encoding - Encoded 48 rows of column                             Car with <class 'datawig.column_encoders.NumericalEncoder'> into                             <class 'numpy.ndarray'> of shape (48, 1) and                             then into shape (48, 1)
+2019-04-23 22:51:34,638 [INFO]  Label Encoding - Encoded 48 rows of column                             Car with <class 'datawig.column_encoders.NumericalEncoder'> into                             <class 'numpy.ndarray'> of shape (48, 1) and                             then into shape (48, 1)
+2019-04-23 22:51:34,638 [INFO]  Label Encoding - Encoded 48 rows of column                             Car with <class 'datawig.column_encoders.NumericalEncoder'> into                             <class 'numpy.ndarray'> of shape (48, 1) and                             then into shape (48, 1)
+2019-04-23 22:51:34,639 [INFO]  Concatenating all 1 latent symbols
+2019-04-23 22:51:34,639 [INFO]  Concatenating all 1 latent symbols
+2019-04-23 22:51:34,639 [INFO]  Concatenating all 1 latent symbols
+2019-04-23 22:51:34,639 [INFO]  Concatenating all 1 latent symbols
+2019-04-23 22:51:34,641 [INFO]  Constructing numerical loss for column Car
+2019-04-23 22:51:34,641 [INFO]  Constructing numerical loss for column Car
+2019-04-23 22:51:34,641 [INFO]  Constructing numerical loss for column Car
+2019-04-23 22:51:34,641 [INFO]  Constructing numerical loss for column Car
+2019-04-23 22:51:34,644 [INFO]  Building output symbols
+2019-04-23 22:51:34,644 [INFO]  Building output symbols
+2019-04-23 22:51:34,644 [INFO]  Building output symbols
+2019-04-23 22:51:34,644 [INFO]  Building output symbols
+2019-04-23 22:51:34,649 [INFO]  
+========== start: fit model
+2019-04-23 22:51:34,649 [INFO]  
+========== start: fit model
+2019-04-23 22:51:34,649 [INFO]  
+========== start: fit model
+2019-04-23 22:51:34,649 [INFO]  
+========== start: fit model
+2019-04-23 22:51:34,651 [WARNING]  Already bound, ignoring bind()
+2019-04-23 22:51:34,651 [WARNING]  Already bound, ignoring bind()
+2019-04-23 22:51:34,651 [WARNING]  Already bound, ignoring bind()
+2019-04-23 22:51:34,651 [WARNING]  Already bound, ignoring bind()
+2019-04-23 22:51:34,671 [INFO]  Epoch[0] Batch [0-11]	Speed: 14237.17 samples/sec	cross-entropy=14.479318	Car-accuracy=0.000000
+2019-04-23 22:51:34,671 [INFO]  Epoch[0] Batch [0-11]	Speed: 14237.17 samples/sec	cross-entropy=14.479318	Car-accuracy=0.000000
+2019-04-23 22:51:34,671 [INFO]  Epoch[0] Batch [0-11]	Speed: 14237.17 samples/sec	cross-entropy=14.479318	Car-accuracy=0.000000
+2019-04-23 22:51:34,671 [INFO]  Epoch[0] Batch [0-11]	Speed: 14237.17 samples/sec	cross-entropy=14.479318	Car-accuracy=0.000000
+2019-04-23 22:51:34,683 [INFO]  Epoch[0] Train-cross-entropy=13.707464
+2019-04-23 22:51:34,683 [INFO]  Epoch[0] Train-cross-entropy=13.707464
+2019-04-23 22:51:34,683 [INFO]  Epoch[0] Train-cross-entropy=13.707464
+2019-04-23 22:51:34,683 [INFO]  Epoch[0] Train-cross-entropy=13.707464
+2019-04-23 22:51:34,684 [INFO]  Epoch[0] Train-Car-accuracy=0.000000
+2019-04-23 22:51:34,684 [INFO]  Epoch[0] Train-Car-accuracy=0.000000
+2019-04-23 22:51:34,684 [INFO]  Epoch[0] Train-Car-accuracy=0.000000
+2019-04-23 22:51:34,684 [INFO]  Epoch[0] Train-Car-accuracy=0.000000
+2019-04-23 22:51:34,685 [INFO]  Epoch[0] Time cost=0.030
+2019-04-23 22:51:34,685 [INFO]  Epoch[0] Time cost=0.030
+2019-04-23 22:51:34,685 [INFO]  Epoch[0] Time cost=0.030
+2019-04-23 22:51:34,685 [INFO]  Epoch[0] Time cost=0.030
+2019-04-23 22:51:34,688 [INFO]  Saved checkpoint to "imputer_model/model-0000.params"
+2019-04-23 22:51:34,688 [INFO]  Saved checkpoint to "imputer_model/model-0000.params"
+2019-04-23 22:51:34,688 [INFO]  Saved checkpoint to "imputer_model/model-0000.params"
+2019-04-23 22:51:34,688 [INFO]  Saved checkpoint to "imputer_model/model-0000.params"
+2019-04-23 22:51:34,691 [INFO]  Epoch[0] Validation-cross-entropy=10.171020
+2019-04-23 22:51:34,691 [INFO]  Epoch[0] Validation-cross-entropy=10.171020
+2019-04-23 22:51:34,691 [INFO]  Epoch[0] Validation-cross-entropy=10.171020
+2019-04-23 22:51:34,691 [INFO]  Epoch[0] Validation-cross-entropy=10.171020
+2019-04-23 22:51:34,693 [INFO]  Epoch[0] Validation-Car-accuracy=0.000000
+2019-04-23 22:51:34,693 [INFO]  Epoch[0] Validation-Car-accuracy=0.000000
+2019-04-23 22:51:34,693 [INFO]  Epoch[0] Validation-Car-accuracy=0.000000
+2019-04-23 22:51:34,693 [INFO]  Epoch[0] Validation-Car-accuracy=0.000000
+2019-04-23 22:51:34,708 [INFO]  Epoch[1] Batch [0-11]	Speed: 14226.75 samples/sec	cross-entropy=10.418056	Car-accuracy=0.000000
+2019-04-23 22:51:34,708 [INFO]  Epoch[1] Batch [0-11]	Speed: 14226.75 samples/sec	cross-entropy=10.418056	Car-accuracy=0.000000
+2019-04-23 22:51:34,708 [INFO]  Epoch[1] Batch [0-11]	Speed: 14226.75 samples/sec	cross-entropy=10.418056	Car-accuracy=0.000000
+2019-04-23 22:51:34,708 [INFO]  Epoch[1] Batch [0-11]	Speed: 14226.75 samples/sec	cross-entropy=10.418056	Car-accuracy=0.000000
+2019-04-23 22:51:34,721 [INFO]  Epoch[1] Train-cross-entropy=10.619691
+2019-04-23 22:51:34,721 [INFO]  Epoch[1] Train-cross-entropy=10.619691
+2019-04-23 22:51:34,721 [INFO]  Epoch[1] Train-cross-entropy=10.619691
+2019-04-23 22:51:34,721 [INFO]  Epoch[1] Train-cross-entropy=10.619691
+2019-04-23 22:51:34,722 [INFO]  Epoch[1] Train-Car-accuracy=0.000000
+2019-04-23 22:51:34,722 [INFO]  Epoch[1] Train-Car-accuracy=0.000000
+2019-04-23 22:51:34,722 [INFO]  Epoch[1] Train-Car-accuracy=0.000000
+2019-04-23 22:51:34,722 [INFO]  Epoch[1] Train-Car-accuracy=0.000000
+2019-04-23 22:51:34,723 [INFO]  Epoch[1] Time cost=0.029
+2019-04-23 22:51:34,723 [INFO]  Epoch[1] Time cost=0.029
+2019-04-23 22:51:34,723 [INFO]  Epoch[1] Time cost=0.029
+2019-04-23 22:51:34,723 [INFO]  Epoch[1] Time cost=0.029
+2019-04-23 22:51:34,728 [INFO]  Saved checkpoint to "imputer_model/model-0001.params"
+2019-04-23 22:51:34,728 [INFO]  Saved checkpoint to "imputer_model/model-0001.params"
+2019-04-23 22:51:34,728 [INFO]  Saved checkpoint to "imputer_model/model-0001.params"
+2019-04-23 22:51:34,728 [INFO]  Saved checkpoint to "imputer_model/model-0001.params"
+2019-04-23 22:51:34,731 [INFO]  Epoch[1] Validation-cross-entropy=10.172859
+2019-04-23 22:51:34,731 [INFO]  Epoch[1] Validation-cross-entropy=10.172859
+2019-04-23 22:51:34,731 [INFO]  Epoch[1] Validation-cross-entropy=10.172859
+2019-04-23 22:51:34,731 [INFO]  Epoch[1] Validation-cross-entropy=10.172859
+2019-04-23 22:51:34,732 [INFO]  Epoch[1] Validation-Car-accuracy=0.000000
+2019-04-23 22:51:34,732 [INFO]  Epoch[1] Validation-Car-accuracy=0.000000
+2019-04-23 22:51:34,732 [INFO]  Epoch[1] Validation-Car-accuracy=0.000000
+2019-04-23 22:51:34,732 [INFO]  Epoch[1] Validation-Car-accuracy=0.000000
+2019-04-23 22:51:34,748 [INFO]  Epoch[2] Batch [0-11]	Speed: 13297.98 samples/sec	cross-entropy=9.750875	Car-accuracy=0.000000
+2019-04-23 22:51:34,748 [INFO]  Epoch[2] Batch [0-11]	Speed: 13297.98 samples/sec	cross-entropy=9.750875	Car-accuracy=0.000000
+2019-04-23 22:51:34,748 [INFO]  Epoch[2] Batch [0-11]	Speed: 13297.98 samples/sec	cross-entropy=9.750875	Car-accuracy=0.000000
+2019-04-23 22:51:34,748 [INFO]  Epoch[2] Batch [0-11]	Speed: 13297.98 samples/sec	cross-entropy=9.750875	Car-accuracy=0.000000
+2019-04-23 22:51:34,760 [INFO]  Epoch[2] Train-cross-entropy=10.126909
+2019-04-23 22:51:34,760 [INFO]  Epoch[2] Train-cross-entropy=10.126909
+2019-04-23 22:51:34,760 [INFO]  Epoch[2] Train-cross-entropy=10.126909
+2019-04-23 22:51:34,760 [INFO]  Epoch[2] Train-cross-entropy=10.126909
+2019-04-23 22:51:34,761 [INFO]  Epoch[2] Train-Car-accuracy=0.000000
+2019-04-23 22:51:34,761 [INFO]  Epoch[2] Train-Car-accuracy=0.000000
+2019-04-23 22:51:34,761 [INFO]  Epoch[2] Train-Car-accuracy=0.000000
+2019-04-23 22:51:34,761 [INFO]  Epoch[2] Train-Car-accuracy=0.000000
+2019-04-23 22:51:34,763 [INFO]  Epoch[2] Time cost=0.030
+2019-04-23 22:51:34,763 [INFO]  Epoch[2] Time cost=0.030
+2019-04-23 22:51:34,763 [INFO]  Epoch[2] Time cost=0.030
+2019-04-23 22:51:34,763 [INFO]  Epoch[2] Time cost=0.030
+2019-04-23 22:51:34,767 [INFO]  Saved checkpoint to "imputer_model/model-0002.params"
+2019-04-23 22:51:34,767 [INFO]  Saved checkpoint to "imputer_model/model-0002.params"
+2019-04-23 22:51:34,767 [INFO]  Saved checkpoint to "imputer_model/model-0002.params"
+2019-04-23 22:51:34,767 [INFO]  Saved checkpoint to "imputer_model/model-0002.params"
+2019-04-23 22:51:34,770 [INFO]  Epoch[2] Validation-cross-entropy=10.587165
+2019-04-23 22:51:34,770 [INFO]  Epoch[2] Validation-cross-entropy=10.587165
+2019-04-23 22:51:34,770 [INFO]  Epoch[2] Validation-cross-entropy=10.587165
+2019-04-23 22:51:34,770 [INFO]  Epoch[2] Validation-cross-entropy=10.587165
+2019-04-23 22:51:34,771 [INFO]  Epoch[2] Validation-Car-accuracy=0.000000
+2019-04-23 22:51:34,771 [INFO]  Epoch[2] Validation-Car-accuracy=0.000000
+2019-04-23 22:51:34,771 [INFO]  Epoch[2] Validation-Car-accuracy=0.000000
+2019-04-23 22:51:34,771 [INFO]  Epoch[2] Validation-Car-accuracy=0.000000
+2019-04-23 22:51:34,787 [INFO]  Epoch[3] Batch [0-11]	Speed: 13687.81 samples/sec	cross-entropy=9.588815	Car-accuracy=0.000000
+2019-04-23 22:51:34,787 [INFO]  Epoch[3] Batch [0-11]	Speed: 13687.81 samples/sec	cross-entropy=9.588815	Car-accuracy=0.000000
+2019-04-23 22:51:34,787 [INFO]  Epoch[3] Batch [0-11]	Speed: 13687.81 samples/sec	cross-entropy=9.588815	Car-accuracy=0.000000
+2019-04-23 22:51:34,787 [INFO]  Epoch[3] Batch [0-11]	Speed: 13687.81 samples/sec	cross-entropy=9.588815	Car-accuracy=0.000000
+2019-04-23 22:51:34,801 [INFO]  Epoch[3] Train-cross-entropy=9.965573
+2019-04-23 22:51:34,801 [INFO]  Epoch[3] Train-cross-entropy=9.965573
+2019-04-23 22:51:34,801 [INFO]  Epoch[3] Train-cross-entropy=9.965573
+2019-04-23 22:51:34,801 [INFO]  Epoch[3] Train-cross-entropy=9.965573
+2019-04-23 22:51:34,802 [INFO]  Epoch[3] Train-Car-accuracy=0.000000
+2019-04-23 22:51:34,802 [INFO]  Epoch[3] Train-Car-accuracy=0.000000
+2019-04-23 22:51:34,802 [INFO]  Epoch[3] Train-Car-accuracy=0.000000
+2019-04-23 22:51:34,802 [INFO]  Epoch[3] Train-Car-accuracy=0.000000
+2019-04-23 22:51:34,803 [INFO]  Epoch[3] Time cost=0.031
+2019-04-23 22:51:34,803 [INFO]  Epoch[3] Time cost=0.031
+2019-04-23 22:51:34,803 [INFO]  Epoch[3] Time cost=0.031
+2019-04-23 22:51:34,803 [INFO]  Epoch[3] Time cost=0.031
+2019-04-23 22:51:34,807 [INFO]  Saved checkpoint to "imputer_model/model-0003.params"
+2019-04-23 22:51:34,807 [INFO]  Saved checkpoint to "imputer_model/model-0003.params"
+2019-04-23 22:51:34,807 [INFO]  Saved checkpoint to "imputer_model/model-0003.params"
+2019-04-23 22:51:34,807 [INFO]  Saved checkpoint to "imputer_model/model-0003.params"
+2019-04-23 22:51:34,810 [INFO]  No improvement detected for 3 epochs compared to 10.171020030975342 last error obtained: 10.924763997395834, stopping here
+2019-04-23 22:51:34,810 [INFO]  No improvement detected for 3 epochs compared to 10.171020030975342 last error obtained: 10.924763997395834, stopping here
+2019-04-23 22:51:34,810 [INFO]  No improvement detected for 3 epochs compared to 10.171020030975342 last error obtained: 10.924763997395834, stopping here
+2019-04-23 22:51:34,810 [INFO]  No improvement detected for 3 epochs compared to 10.171020030975342 last error obtained: 10.924763997395834, stopping here
+2019-04-23 22:51:34,812 [INFO]  Stopping training, patience reached
+2019-04-23 22:51:34,812 [INFO]  Stopping training, patience reached
+2019-04-23 22:51:34,812 [INFO]  Stopping training, patience reached
+2019-04-23 22:51:34,812 [INFO]  Stopping training, patience reached
+2019-04-23 22:51:34,814 [INFO]  
+========== done (0.16524791717529297 s) fit model
+2019-04-23 22:51:34,814 [INFO]  
+========== done (0.16524791717529297 s) fit model
+2019-04-23 22:51:34,814 [INFO]  
+========== done (0.16524791717529297 s) fit model
+2019-04-23 22:51:34,814 [INFO]  
+========== done (0.16524791717529297 s) fit model
+2019-04-23 22:51:34,820 [INFO]  Expected calibration error: 100.0%
+2019-04-23 22:51:34,820 [INFO]  Expected calibration error: 100.0%
+2019-04-23 22:51:34,820 [INFO]  Expected calibration error: 100.0%
+2019-04-23 22:51:34,820 [INFO]  Expected calibration error: 100.0%
+2019-04-23 22:51:34,827 [INFO]  Expected calibration error after calibration: 100.0%
+2019-04-23 22:51:34,827 [INFO]  Expected calibration error after calibration: 100.0%
+2019-04-23 22:51:34,827 [INFO]  Expected calibration error after calibration: 100.0%
+2019-04-23 22:51:34,827 [INFO]  Expected calibration error after calibration: 100.0%
+2019-04-23 22:51:34,834 [INFO]  save metrics in imputer_model/fit-test-metrics.json
+2019-04-23 22:51:34,834 [INFO]  save metrics in imputer_model/fit-test-metrics.json
+2019-04-23 22:51:34,834 [INFO]  save metrics in imputer_model/fit-test-metrics.json
+2019-04-23 22:51:34,834 [INFO]  save metrics in imputer_model/fit-test-metrics.json
+2019-04-23 22:51:34,835 [INFO]  Keeping imputer_model/model-0000.params
+2019-04-23 22:51:34,835 [INFO]  Keeping imputer_model/model-0000.params
+2019-04-23 22:51:34,835 [INFO]  Keeping imputer_model/model-0000.params
+2019-04-23 22:51:34,835 [INFO]  Keeping imputer_model/model-0000.params
+2019-04-23 22:51:34,837 [INFO]  Deleting imputer_model/model-0002.params
+2019-04-23 22:51:34,837 [INFO]  Deleting imputer_model/model-0002.params
+2019-04-23 22:51:34,837 [INFO]  Deleting imputer_model/model-0002.params
+2019-04-23 22:51:34,837 [INFO]  Deleting imputer_model/model-0002.params
+2019-04-23 22:51:34,838 [INFO]  Deleting imputer_model/model-0001.params
+2019-04-23 22:51:34,838 [INFO]  Deleting imputer_model/model-0001.params
+2019-04-23 22:51:34,838 [INFO]  Deleting imputer_model/model-0001.params
+2019-04-23 22:51:34,838 [INFO]  Deleting imputer_model/model-0001.params
+2019-04-23 22:51:34,840 [INFO]  Deleting imputer_model/model-0003.params
+2019-04-23 22:51:34,840 [INFO]  Deleting imputer_model/model-0003.params
+2019-04-23 22:51:34,840 [INFO]  Deleting imputer_model/model-0003.params
+2019-04-23 22:51:34,840 [INFO]  Deleting imputer_model/model-0003.params
+2019-04-23 22:51:38,705 [INFO]  Concatenating numeric columns ['Beer', 'Steel', 'Gas', 'Electricity', 'Temp'] into numerical_features-Ue52RvEJgw
+2019-04-23 22:51:38,705 [INFO]  Concatenating numeric columns ['Beer', 'Steel', 'Gas', 'Electricity', 'Temp'] into numerical_features-Ue52RvEJgw
+2019-04-23 22:51:38,705 [INFO]  Concatenating numeric columns ['Beer', 'Steel', 'Gas', 'Electricity', 'Temp'] into numerical_features-Ue52RvEJgw
+2019-04-23 22:51:38,705 [INFO]  Concatenating numeric columns ['Beer', 'Steel', 'Gas', 'Electricity', 'Temp'] into numerical_features-Ue52RvEJgw
+2019-04-23 22:51:38,707 [INFO]  Normalizing with StandardScaler
+2019-04-23 22:51:38,707 [INFO]  Normalizing with StandardScaler
+2019-04-23 22:51:38,707 [INFO]  Normalizing with StandardScaler
+2019-04-23 22:51:38,707 [INFO]  Normalizing with StandardScaler
+2019-04-23 22:51:38,709 [INFO]  Data Encoding - Encoded 448 rows of column                         Beer,Steel,Gas,Electricity,Temp with <class 'datawig.column_encoders.NumericalEncoder'> into                         <class 'numpy.ndarray'> of shape (448, 5)                         and then into shape (448, 5)
+2019-04-23 22:51:38,709 [INFO]  Data Encoding - Encoded 448 rows of column                         Beer,Steel,Gas,Electricity,Temp with <class 'datawig.column_encoders.NumericalEncoder'> into                         <class 'numpy.ndarray'> of shape (448, 5)                         and then into shape (448, 5)
+2019-04-23 22:51:38,709 [INFO]  Data Encoding - Encoded 448 rows of column                         Beer,Steel,Gas,Electricity,Temp with <class 'datawig.column_encoders.NumericalEncoder'> into                         <class 'numpy.ndarray'> of shape (448, 5)                         and then into shape (448, 5)
+2019-04-23 22:51:38,709 [INFO]  Data Encoding - Encoded 448 rows of column                         Beer,Steel,Gas,Electricity,Temp with <class 'datawig.column_encoders.NumericalEncoder'> into                         <class 'numpy.ndarray'> of shape (448, 5)                         and then into shape (448, 5)
+2019-04-23 22:51:38,712 [INFO]  Concatenating numeric columns ['Car'] into Car
+2019-04-23 22:51:38,712 [INFO]  Concatenating numeric columns ['Car'] into Car
+2019-04-23 22:51:38,712 [INFO]  Concatenating numeric columns ['Car'] into Car
+2019-04-23 22:51:38,712 [INFO]  Concatenating numeric columns ['Car'] into Car
+2019-04-23 22:51:38,714 [INFO]  Normalizing with StandardScaler
+2019-04-23 22:51:38,714 [INFO]  Normalizing with StandardScaler
+2019-04-23 22:51:38,714 [INFO]  Normalizing with StandardScaler
+2019-04-23 22:51:38,714 [INFO]  Normalizing with StandardScaler
+2019-04-23 22:51:38,716 [INFO]  Label Encoding - Encoded 448 rows of column                             Car with <class 'datawig.column_encoders.NumericalEncoder'> into                             <class 'numpy.ndarray'> of shape (448, 1) and                             then into shape (448, 1)
+2019-04-23 22:51:38,716 [INFO]  Label Encoding - Encoded 448 rows of column                             Car with <class 'datawig.column_encoders.NumericalEncoder'> into                             <class 'numpy.ndarray'> of shape (448, 1) and                             then into shape (448, 1)
+2019-04-23 22:51:38,716 [INFO]  Label Encoding - Encoded 448 rows of column                             Car with <class 'datawig.column_encoders.NumericalEncoder'> into                             <class 'numpy.ndarray'> of shape (448, 1) and                             then into shape (448, 1)
+2019-04-23 22:51:38,716 [INFO]  Label Encoding - Encoded 448 rows of column                             Car with <class 'datawig.column_encoders.NumericalEncoder'> into                             <class 'numpy.ndarray'> of shape (448, 1) and                             then into shape (448, 1)
+2019-04-23 22:51:38,731 [INFO]  Top-k only for CategoricalEncoder, dropping Car, <class 'datawig.column_encoders.NumericalEncoder'>
+2019-04-23 22:51:38,731 [INFO]  Top-k only for CategoricalEncoder, dropping Car, <class 'datawig.column_encoders.NumericalEncoder'>
+2019-04-23 22:51:38,731 [INFO]  Top-k only for CategoricalEncoder, dropping Car, <class 'datawig.column_encoders.NumericalEncoder'>
+2019-04-23 22:51:38,731 [INFO]  Top-k only for CategoricalEncoder, dropping Car, <class 'datawig.column_encoders.NumericalEncoder'>
+2019-04-23 22:51:38,732 [INFO]  Precision filtering only for CategoricalEncoder returning                             Car unfiltered
+2019-04-23 22:51:38,732 [INFO]  Precision filtering only for CategoricalEncoder returning                             Car unfiltered
+2019-04-23 22:51:38,732 [INFO]  Precision filtering only for CategoricalEncoder returning                             Car unfiltered
+2019-04-23 22:51:38,732 [INFO]  Precision filtering only for CategoricalEncoder returning                             Car unfiltered
+2019-04-23 22:55:22,739 [INFO]  Assuming 5 numeric input columns: Beer, Steel, Gas, Electricity, Temp
+2019-04-23 22:55:22,739 [INFO]  Assuming 5 numeric input columns: Beer, Steel, Gas, Electricity, Temp
+2019-04-23 22:55:22,739 [INFO]  Assuming 5 numeric input columns: Beer, Steel, Gas, Electricity, Temp
+2019-04-23 22:55:22,739 [INFO]  Assuming 5 numeric input columns: Beer, Steel, Gas, Electricity, Temp
+2019-04-23 22:55:22,740 [INFO]  Assuming 0 string input columns: 
+2019-04-23 22:55:22,740 [INFO]  Assuming 0 string input columns: 
+2019-04-23 22:55:22,740 [INFO]  Assuming 0 string input columns: 
+2019-04-23 22:55:22,740 [INFO]  Assuming 0 string input columns: 
+2019-04-23 22:55:22,742 [INFO]  No output column name provided for ColumnEncoder using Car
+2019-04-23 22:55:22,742 [INFO]  No output column name provided for ColumnEncoder using Car
+2019-04-23 22:55:22,742 [INFO]  No output column name provided for ColumnEncoder using Car
+2019-04-23 22:55:22,742 [INFO]  No output column name provided for ColumnEncoder using Car
+2019-04-23 22:55:22,743 [INFO]  Assuming numeric output column: Car
+2019-04-23 22:55:22,743 [INFO]  Assuming numeric output column: Car
+2019-04-23 22:55:22,743 [INFO]  Assuming numeric output column: Car
+2019-04-23 22:55:22,743 [INFO]  Assuming numeric output column: Car
+2019-04-23 22:55:22,745 [INFO]  Using [[cpu(0)]] as the context for training
+2019-04-23 22:55:22,745 [INFO]  Using [[cpu(0)]] as the context for training
+2019-04-23 22:55:22,745 [INFO]  Using [[cpu(0)]] as the context for training
+2019-04-23 22:55:22,745 [INFO]  Using [[cpu(0)]] as the context for training
+2019-04-23 22:55:22,745 [INFO]  Using [[cpu(0)]] as the context for training
+2019-04-23 22:55:22,747 [INFO]  Fitting label encoder <class 'datawig.column_encoders.NumericalEncoder'> on 332 rows                             of training data
+2019-04-23 22:55:22,747 [INFO]  Fitting label encoder <class 'datawig.column_encoders.NumericalEncoder'> on 332 rows                             of training data
+2019-04-23 22:55:22,747 [INFO]  Fitting label encoder <class 'datawig.column_encoders.NumericalEncoder'> on 332 rows                             of training data
+2019-04-23 22:55:22,747 [INFO]  Fitting label encoder <class 'datawig.column_encoders.NumericalEncoder'> on 332 rows                             of training data
+2019-04-23 22:55:22,747 [INFO]  Fitting label encoder <class 'datawig.column_encoders.NumericalEncoder'> on 332 rows                             of training data
+2019-04-23 22:55:22,751 [INFO]  Detected 0 rows with missing labels                         for column Car
+2019-04-23 22:55:22,751 [INFO]  Detected 0 rows with missing labels                         for column Car
+2019-04-23 22:55:22,751 [INFO]  Detected 0 rows with missing labels                         for column Car
+2019-04-23 22:55:22,751 [INFO]  Detected 0 rows with missing labels                         for column Car
+2019-04-23 22:55:22,751 [INFO]  Detected 0 rows with missing labels                         for column Car
+2019-04-23 22:55:22,752 [INFO]  Dropping 0/332 rows
+2019-04-23 22:55:22,752 [INFO]  Dropping 0/332 rows
+2019-04-23 22:55:22,752 [INFO]  Dropping 0/332 rows
+2019-04-23 22:55:22,752 [INFO]  Dropping 0/332 rows
+2019-04-23 22:55:22,752 [INFO]  Dropping 0/332 rows
+2019-04-23 22:55:22,754 [INFO]  Detected 0 rows with missing labels                         for column Car
+2019-04-23 22:55:22,754 [INFO]  Detected 0 rows with missing labels                         for column Car
+2019-04-23 22:55:22,754 [INFO]  Detected 0 rows with missing labels                         for column Car
+2019-04-23 22:55:22,754 [INFO]  Detected 0 rows with missing labels                         for column Car
+2019-04-23 22:55:22,754 [INFO]  Detected 0 rows with missing labels                         for column Car
+2019-04-23 22:55:22,755 [INFO]  Dropping 0/36 rows
+2019-04-23 22:55:22,755 [INFO]  Dropping 0/36 rows
+2019-04-23 22:55:22,755 [INFO]  Dropping 0/36 rows
+2019-04-23 22:55:22,755 [INFO]  Dropping 0/36 rows
+2019-04-23 22:55:22,755 [INFO]  Dropping 0/36 rows
+2019-04-23 22:55:22,757 [INFO]  Train: 332, Test: 36
+2019-04-23 22:55:22,757 [INFO]  Train: 332, Test: 36
+2019-04-23 22:55:22,757 [INFO]  Train: 332, Test: 36
+2019-04-23 22:55:22,757 [INFO]  Train: 332, Test: 36
+2019-04-23 22:55:22,757 [INFO]  Train: 332, Test: 36
+2019-04-23 22:55:22,759 [INFO]  Fitting data encoder <class 'datawig.column_encoders.NumericalEncoder'> on columns Beer, Steel, Gas, Electricity, Temp and 332 rows of training data with parameters {'input_columns': ['Beer', 'Steel', 'Gas', 'Electricity', 'Temp'], 'output_column': 'numerical_features-BuNO6n9JEC', 'output_dim': 5, 'normalize': True, 'scaler': None}
+2019-04-23 22:55:22,759 [INFO]  Fitting data encoder <class 'datawig.column_encoders.NumericalEncoder'> on columns Beer, Steel, Gas, Electricity, Temp and 332 rows of training data with parameters {'input_columns': ['Beer', 'Steel', 'Gas', 'Electricity', 'Temp'], 'output_column': 'numerical_features-BuNO6n9JEC', 'output_dim': 5, 'normalize': True, 'scaler': None}
+2019-04-23 22:55:22,759 [INFO]  Fitting data encoder <class 'datawig.column_encoders.NumericalEncoder'> on columns Beer, Steel, Gas, Electricity, Temp and 332 rows of training data with parameters {'input_columns': ['Beer', 'Steel', 'Gas', 'Electricity', 'Temp'], 'output_column': 'numerical_features-BuNO6n9JEC', 'output_dim': 5, 'normalize': True, 'scaler': None}
+2019-04-23 22:55:22,759 [INFO]  Fitting data encoder <class 'datawig.column_encoders.NumericalEncoder'> on columns Beer, Steel, Gas, Electricity, Temp and 332 rows of training data with parameters {'input_columns': ['Beer', 'Steel', 'Gas', 'Electricity', 'Temp'], 'output_column': 'numerical_features-BuNO6n9JEC', 'output_dim': 5, 'normalize': True, 'scaler': None}
+2019-04-23 22:55:22,759 [INFO]  Fitting data encoder <class 'datawig.column_encoders.NumericalEncoder'> on columns Beer, Steel, Gas, Electricity, Temp and 332 rows of training data with parameters {'input_columns': ['Beer', 'Steel', 'Gas', 'Electricity', 'Temp'], 'output_column': 'numerical_features-BuNO6n9JEC', 'output_dim': 5, 'normalize': True, 'scaler': None}
+2019-04-23 22:55:22,766 [INFO]  Building Train Iterator with 332 elements
+2019-04-23 22:55:22,766 [INFO]  Building Train Iterator with 332 elements
+2019-04-23 22:55:22,766 [INFO]  Building Train Iterator with 332 elements
+2019-04-23 22:55:22,766 [INFO]  Building Train Iterator with 332 elements
+2019-04-23 22:55:22,766 [INFO]  Building Train Iterator with 332 elements
+2019-04-23 22:55:22,781 [INFO]  Concatenating numeric columns ['Beer', 'Steel', 'Gas', 'Electricity', 'Temp'] into numerical_features-BuNO6n9JEC
+2019-04-23 22:55:22,781 [INFO]  Concatenating numeric columns ['Beer', 'Steel', 'Gas', 'Electricity', 'Temp'] into numerical_features-BuNO6n9JEC
+2019-04-23 22:55:22,781 [INFO]  Concatenating numeric columns ['Beer', 'Steel', 'Gas', 'Electricity', 'Temp'] into numerical_features-BuNO6n9JEC
+2019-04-23 22:55:22,781 [INFO]  Concatenating numeric columns ['Beer', 'Steel', 'Gas', 'Electricity', 'Temp'] into numerical_features-BuNO6n9JEC
+2019-04-23 22:55:22,781 [INFO]  Concatenating numeric columns ['Beer', 'Steel', 'Gas', 'Electricity', 'Temp'] into numerical_features-BuNO6n9JEC
+2019-04-23 22:55:22,782 [INFO]  Normalizing with StandardScaler
+2019-04-23 22:55:22,782 [INFO]  Normalizing with StandardScaler
+2019-04-23 22:55:22,782 [INFO]  Normalizing with StandardScaler
+2019-04-23 22:55:22,782 [INFO]  Normalizing with StandardScaler
+2019-04-23 22:55:22,782 [INFO]  Normalizing with StandardScaler
+2019-04-23 22:55:22,785 [INFO]  Data Encoding - Encoded 336 rows of column                         Beer,Steel,Gas,Electricity,Temp with <class 'datawig.column_encoders.NumericalEncoder'> into                         <class 'numpy.ndarray'> of shape (336, 5)                         and then into shape (336, 5)
+2019-04-23 22:55:22,785 [INFO]  Data Encoding - Encoded 336 rows of column                         Beer,Steel,Gas,Electricity,Temp with <class 'datawig.column_encoders.NumericalEncoder'> into                         <class 'numpy.ndarray'> of shape (336, 5)                         and then into shape (336, 5)
+2019-04-23 22:55:22,785 [INFO]  Data Encoding - Encoded 336 rows of column                         Beer,Steel,Gas,Electricity,Temp with <class 'datawig.column_encoders.NumericalEncoder'> into                         <class 'numpy.ndarray'> of shape (336, 5)                         and then into shape (336, 5)
+2019-04-23 22:55:22,785 [INFO]  Data Encoding - Encoded 336 rows of column                         Beer,Steel,Gas,Electricity,Temp with <class 'datawig.column_encoders.NumericalEncoder'> into                         <class 'numpy.ndarray'> of shape (336, 5)                         and then into shape (336, 5)
+2019-04-23 22:55:22,785 [INFO]  Data Encoding - Encoded 336 rows of column                         Beer,Steel,Gas,Electricity,Temp with <class 'datawig.column_encoders.NumericalEncoder'> into                         <class 'numpy.ndarray'> of shape (336, 5)                         and then into shape (336, 5)
+2019-04-23 22:55:22,788 [INFO]  Concatenating numeric columns ['Car'] into Car
+2019-04-23 22:55:22,788 [INFO]  Concatenating numeric columns ['Car'] into Car
+2019-04-23 22:55:22,788 [INFO]  Concatenating numeric columns ['Car'] into Car
+2019-04-23 22:55:22,788 [INFO]  Concatenating numeric columns ['Car'] into Car
+2019-04-23 22:55:22,788 [INFO]  Concatenating numeric columns ['Car'] into Car
+2019-04-23 22:55:22,790 [INFO]  Normalizing with StandardScaler
+2019-04-23 22:55:22,790 [INFO]  Normalizing with StandardScaler
+2019-04-23 22:55:22,790 [INFO]  Normalizing with StandardScaler
+2019-04-23 22:55:22,790 [INFO]  Normalizing with StandardScaler
+2019-04-23 22:55:22,790 [INFO]  Normalizing with StandardScaler
+2019-04-23 22:55:22,792 [INFO]  Label Encoding - Encoded 336 rows of column                             Car with <class 'datawig.column_encoders.NumericalEncoder'> into                             <class 'numpy.ndarray'> of shape (336, 1) and                             then into shape (336, 1)
+2019-04-23 22:55:22,792 [INFO]  Label Encoding - Encoded 336 rows of column                             Car with <class 'datawig.column_encoders.NumericalEncoder'> into                             <class 'numpy.ndarray'> of shape (336, 1) and                             then into shape (336, 1)
+2019-04-23 22:55:22,792 [INFO]  Label Encoding - Encoded 336 rows of column                             Car with <class 'datawig.column_encoders.NumericalEncoder'> into                             <class 'numpy.ndarray'> of shape (336, 1) and                             then into shape (336, 1)
+2019-04-23 22:55:22,792 [INFO]  Label Encoding - Encoded 336 rows of column                             Car with <class 'datawig.column_encoders.NumericalEncoder'> into                             <class 'numpy.ndarray'> of shape (336, 1) and                             then into shape (336, 1)
+2019-04-23 22:55:22,792 [INFO]  Label Encoding - Encoded 336 rows of column                             Car with <class 'datawig.column_encoders.NumericalEncoder'> into                             <class 'numpy.ndarray'> of shape (336, 1) and                             then into shape (336, 1)
+2019-04-23 22:55:22,794 [INFO]  Building Test Iterator with 36 elements
+2019-04-23 22:55:22,794 [INFO]  Building Test Iterator with 36 elements
+2019-04-23 22:55:22,794 [INFO]  Building Test Iterator with 36 elements
+2019-04-23 22:55:22,794 [INFO]  Building Test Iterator with 36 elements
+2019-04-23 22:55:22,794 [INFO]  Building Test Iterator with 36 elements
+2019-04-23 22:55:22,819 [INFO]  Concatenating numeric columns ['Beer', 'Steel', 'Gas', 'Electricity', 'Temp'] into numerical_features-BuNO6n9JEC
+2019-04-23 22:55:22,819 [INFO]  Concatenating numeric columns ['Beer', 'Steel', 'Gas', 'Electricity', 'Temp'] into numerical_features-BuNO6n9JEC
+2019-04-23 22:55:22,819 [INFO]  Concatenating numeric columns ['Beer', 'Steel', 'Gas', 'Electricity', 'Temp'] into numerical_features-BuNO6n9JEC
+2019-04-23 22:55:22,819 [INFO]  Concatenating numeric columns ['Beer', 'Steel', 'Gas', 'Electricity', 'Temp'] into numerical_features-BuNO6n9JEC
+2019-04-23 22:55:22,819 [INFO]  Concatenating numeric columns ['Beer', 'Steel', 'Gas', 'Electricity', 'Temp'] into numerical_features-BuNO6n9JEC
+2019-04-23 22:55:22,820 [INFO]  Normalizing with StandardScaler
+2019-04-23 22:55:22,820 [INFO]  Normalizing with StandardScaler
+2019-04-23 22:55:22,820 [INFO]  Normalizing with StandardScaler
+2019-04-23 22:55:22,820 [INFO]  Normalizing with StandardScaler
+2019-04-23 22:55:22,820 [INFO]  Normalizing with StandardScaler
+2019-04-23 22:55:22,824 [INFO]  Data Encoding - Encoded 48 rows of column                         Beer,Steel,Gas,Electricity,Temp with <class 'datawig.column_encoders.NumericalEncoder'> into                         <class 'numpy.ndarray'> of shape (48, 5)                         and then into shape (48, 5)
+2019-04-23 22:55:22,824 [INFO]  Data Encoding - Encoded 48 rows of column                         Beer,Steel,Gas,Electricity,Temp with <class 'datawig.column_encoders.NumericalEncoder'> into                         <class 'numpy.ndarray'> of shape (48, 5)                         and then into shape (48, 5)
+2019-04-23 22:55:22,824 [INFO]  Data Encoding - Encoded 48 rows of column                         Beer,Steel,Gas,Electricity,Temp with <class 'datawig.column_encoders.NumericalEncoder'> into                         <class 'numpy.ndarray'> of shape (48, 5)                         and then into shape (48, 5)
+2019-04-23 22:55:22,824 [INFO]  Data Encoding - Encoded 48 rows of column                         Beer,Steel,Gas,Electricity,Temp with <class 'datawig.column_encoders.NumericalEncoder'> into                         <class 'numpy.ndarray'> of shape (48, 5)                         and then into shape (48, 5)
+2019-04-23 22:55:22,824 [INFO]  Data Encoding - Encoded 48 rows of column                         Beer,Steel,Gas,Electricity,Temp with <class 'datawig.column_encoders.NumericalEncoder'> into                         <class 'numpy.ndarray'> of shape (48, 5)                         and then into shape (48, 5)
+2019-04-23 22:55:22,827 [INFO]  Concatenating numeric columns ['Car'] into Car
+2019-04-23 22:55:22,827 [INFO]  Concatenating numeric columns ['Car'] into Car
+2019-04-23 22:55:22,827 [INFO]  Concatenating numeric columns ['Car'] into Car
+2019-04-23 22:55:22,827 [INFO]  Concatenating numeric columns ['Car'] into Car
+2019-04-23 22:55:22,827 [INFO]  Concatenating numeric columns ['Car'] into Car
+2019-04-23 22:55:22,828 [INFO]  Normalizing with StandardScaler
+2019-04-23 22:55:22,828 [INFO]  Normalizing with StandardScaler
+2019-04-23 22:55:22,828 [INFO]  Normalizing with StandardScaler
+2019-04-23 22:55:22,828 [INFO]  Normalizing with StandardScaler
+2019-04-23 22:55:22,828 [INFO]  Normalizing with StandardScaler
+2019-04-23 22:55:22,831 [INFO]  Label Encoding - Encoded 48 rows of column                             Car with <class 'datawig.column_encoders.NumericalEncoder'> into                             <class 'numpy.ndarray'> of shape (48, 1) and                             then into shape (48, 1)
+2019-04-23 22:55:22,831 [INFO]  Label Encoding - Encoded 48 rows of column                             Car with <class 'datawig.column_encoders.NumericalEncoder'> into                             <class 'numpy.ndarray'> of shape (48, 1) and                             then into shape (48, 1)
+2019-04-23 22:55:22,831 [INFO]  Label Encoding - Encoded 48 rows of column                             Car with <class 'datawig.column_encoders.NumericalEncoder'> into                             <class 'numpy.ndarray'> of shape (48, 1) and                             then into shape (48, 1)
+2019-04-23 22:55:22,831 [INFO]  Label Encoding - Encoded 48 rows of column                             Car with <class 'datawig.column_encoders.NumericalEncoder'> into                             <class 'numpy.ndarray'> of shape (48, 1) and                             then into shape (48, 1)
+2019-04-23 22:55:22,831 [INFO]  Label Encoding - Encoded 48 rows of column                             Car with <class 'datawig.column_encoders.NumericalEncoder'> into                             <class 'numpy.ndarray'> of shape (48, 1) and                             then into shape (48, 1)
+2019-04-23 22:55:22,833 [INFO]  Concatenating all 1 latent symbols
+2019-04-23 22:55:22,833 [INFO]  Concatenating all 1 latent symbols
+2019-04-23 22:55:22,833 [INFO]  Concatenating all 1 latent symbols
+2019-04-23 22:55:22,833 [INFO]  Concatenating all 1 latent symbols
+2019-04-23 22:55:22,833 [INFO]  Concatenating all 1 latent symbols
+2019-04-23 22:55:22,835 [INFO]  Constructing numerical loss for column Car
+2019-04-23 22:55:22,835 [INFO]  Constructing numerical loss for column Car
+2019-04-23 22:55:22,835 [INFO]  Constructing numerical loss for column Car
+2019-04-23 22:55:22,835 [INFO]  Constructing numerical loss for column Car
+2019-04-23 22:55:22,835 [INFO]  Constructing numerical loss for column Car
+2019-04-23 22:55:22,839 [INFO]  Building output symbols
+2019-04-23 22:55:22,839 [INFO]  Building output symbols
+2019-04-23 22:55:22,839 [INFO]  Building output symbols
+2019-04-23 22:55:22,839 [INFO]  Building output symbols
+2019-04-23 22:55:22,839 [INFO]  Building output symbols
+2019-04-23 22:55:22,845 [INFO]  
+========== start: fit model
+2019-04-23 22:55:22,845 [INFO]  
+========== start: fit model
+2019-04-23 22:55:22,845 [INFO]  
+========== start: fit model
+2019-04-23 22:55:22,845 [INFO]  
+========== start: fit model
+2019-04-23 22:55:22,845 [INFO]  
+========== start: fit model
+2019-04-23 22:55:22,846 [WARNING]  Already bound, ignoring bind()
+2019-04-23 22:55:22,846 [WARNING]  Already bound, ignoring bind()
+2019-04-23 22:55:22,846 [WARNING]  Already bound, ignoring bind()
+2019-04-23 22:55:22,846 [WARNING]  Already bound, ignoring bind()
+2019-04-23 22:55:22,846 [WARNING]  Already bound, ignoring bind()
+2019-04-23 22:55:22,867 [INFO]  Epoch[0] Batch [0-11]	Speed: 10786.84 samples/sec	cross-entropy=15.172592	Car-accuracy=0.000000
+2019-04-23 22:55:22,867 [INFO]  Epoch[0] Batch [0-11]	Speed: 10786.84 samples/sec	cross-entropy=15.172592	Car-accuracy=0.000000
+2019-04-23 22:55:22,867 [INFO]  Epoch[0] Batch [0-11]	Speed: 10786.84 samples/sec	cross-entropy=15.172592	Car-accuracy=0.000000
+2019-04-23 22:55:22,867 [INFO]  Epoch[0] Batch [0-11]	Speed: 10786.84 samples/sec	cross-entropy=15.172592	Car-accuracy=0.000000
+2019-04-23 22:55:22,867 [INFO]  Epoch[0] Batch [0-11]	Speed: 10786.84 samples/sec	cross-entropy=15.172592	Car-accuracy=0.000000
+2019-04-23 22:55:22,884 [INFO]  Epoch[0] Train-cross-entropy=14.373746
+2019-04-23 22:55:22,884 [INFO]  Epoch[0] Train-cross-entropy=14.373746
+2019-04-23 22:55:22,884 [INFO]  Epoch[0] Train-cross-entropy=14.373746
+2019-04-23 22:55:22,884 [INFO]  Epoch[0] Train-cross-entropy=14.373746
+2019-04-23 22:55:22,884 [INFO]  Epoch[0] Train-cross-entropy=14.373746
+2019-04-23 22:55:22,887 [INFO]  Epoch[0] Train-Car-accuracy=0.000000
+2019-04-23 22:55:22,887 [INFO]  Epoch[0] Train-Car-accuracy=0.000000
+2019-04-23 22:55:22,887 [INFO]  Epoch[0] Train-Car-accuracy=0.000000
+2019-04-23 22:55:22,887 [INFO]  Epoch[0] Train-Car-accuracy=0.000000
+2019-04-23 22:55:22,887 [INFO]  Epoch[0] Train-Car-accuracy=0.000000
+2019-04-23 22:55:22,888 [INFO]  Epoch[0] Time cost=0.039
+2019-04-23 22:55:22,888 [INFO]  Epoch[0] Time cost=0.039
+2019-04-23 22:55:22,888 [INFO]  Epoch[0] Time cost=0.039
+2019-04-23 22:55:22,888 [INFO]  Epoch[0] Time cost=0.039
+2019-04-23 22:55:22,888 [INFO]  Epoch[0] Time cost=0.039
+2019-04-23 22:55:22,893 [INFO]  Saved checkpoint to "imputer_model/model-0000.params"
+2019-04-23 22:55:22,893 [INFO]  Saved checkpoint to "imputer_model/model-0000.params"
+2019-04-23 22:55:22,893 [INFO]  Saved checkpoint to "imputer_model/model-0000.params"
+2019-04-23 22:55:22,893 [INFO]  Saved checkpoint to "imputer_model/model-0000.params"
+2019-04-23 22:55:22,893 [INFO]  Saved checkpoint to "imputer_model/model-0000.params"
+2019-04-23 22:55:22,899 [INFO]  Epoch[0] Validation-cross-entropy=9.328556
+2019-04-23 22:55:22,899 [INFO]  Epoch[0] Validation-cross-entropy=9.328556
+2019-04-23 22:55:22,899 [INFO]  Epoch[0] Validation-cross-entropy=9.328556
+2019-04-23 22:55:22,899 [INFO]  Epoch[0] Validation-cross-entropy=9.328556
+2019-04-23 22:55:22,899 [INFO]  Epoch[0] Validation-cross-entropy=9.328556
+2019-04-23 22:55:22,900 [INFO]  Epoch[0] Validation-Car-accuracy=0.000000
+2019-04-23 22:55:22,900 [INFO]  Epoch[0] Validation-Car-accuracy=0.000000
+2019-04-23 22:55:22,900 [INFO]  Epoch[0] Validation-Car-accuracy=0.000000
+2019-04-23 22:55:22,900 [INFO]  Epoch[0] Validation-Car-accuracy=0.000000
+2019-04-23 22:55:22,900 [INFO]  Epoch[0] Validation-Car-accuracy=0.000000
+2019-04-23 22:55:22,921 [INFO]  Epoch[1] Batch [0-11]	Speed: 11335.78 samples/sec	cross-entropy=11.218067	Car-accuracy=0.000000
+2019-04-23 22:55:22,921 [INFO]  Epoch[1] Batch [0-11]	Speed: 11335.78 samples/sec	cross-entropy=11.218067	Car-accuracy=0.000000
+2019-04-23 22:55:22,921 [INFO]  Epoch[1] Batch [0-11]	Speed: 11335.78 samples/sec	cross-entropy=11.218067	Car-accuracy=0.000000
+2019-04-23 22:55:22,921 [INFO]  Epoch[1] Batch [0-11]	Speed: 11335.78 samples/sec	cross-entropy=11.218067	Car-accuracy=0.000000
+2019-04-23 22:55:22,921 [INFO]  Epoch[1] Batch [0-11]	Speed: 11335.78 samples/sec	cross-entropy=11.218067	Car-accuracy=0.000000
+2019-04-23 22:55:22,937 [INFO]  Epoch[1] Train-cross-entropy=11.364039
+2019-04-23 22:55:22,937 [INFO]  Epoch[1] Train-cross-entropy=11.364039
+2019-04-23 22:55:22,937 [INFO]  Epoch[1] Train-cross-entropy=11.364039
+2019-04-23 22:55:22,937 [INFO]  Epoch[1] Train-cross-entropy=11.364039
+2019-04-23 22:55:22,937 [INFO]  Epoch[1] Train-cross-entropy=11.364039
+2019-04-23 22:55:22,941 [INFO]  Epoch[1] Train-Car-accuracy=0.000000
+2019-04-23 22:55:22,941 [INFO]  Epoch[1] Train-Car-accuracy=0.000000
+2019-04-23 22:55:22,941 [INFO]  Epoch[1] Train-Car-accuracy=0.000000
+2019-04-23 22:55:22,941 [INFO]  Epoch[1] Train-Car-accuracy=0.000000
+2019-04-23 22:55:22,941 [INFO]  Epoch[1] Train-Car-accuracy=0.000000
+2019-04-23 22:55:22,943 [INFO]  Epoch[1] Time cost=0.042
+2019-04-23 22:55:22,943 [INFO]  Epoch[1] Time cost=0.042
+2019-04-23 22:55:22,943 [INFO]  Epoch[1] Time cost=0.042
+2019-04-23 22:55:22,943 [INFO]  Epoch[1] Time cost=0.042
+2019-04-23 22:55:22,943 [INFO]  Epoch[1] Time cost=0.042
+2019-04-23 22:55:22,948 [INFO]  Saved checkpoint to "imputer_model/model-0001.params"
+2019-04-23 22:55:22,948 [INFO]  Saved checkpoint to "imputer_model/model-0001.params"
+2019-04-23 22:55:22,948 [INFO]  Saved checkpoint to "imputer_model/model-0001.params"
+2019-04-23 22:55:22,948 [INFO]  Saved checkpoint to "imputer_model/model-0001.params"
+2019-04-23 22:55:22,948 [INFO]  Saved checkpoint to "imputer_model/model-0001.params"
+2019-04-23 22:55:22,954 [INFO]  Epoch[1] Validation-cross-entropy=9.563357
+2019-04-23 22:55:22,954 [INFO]  Epoch[1] Validation-cross-entropy=9.563357
+2019-04-23 22:55:22,954 [INFO]  Epoch[1] Validation-cross-entropy=9.563357
+2019-04-23 22:55:22,954 [INFO]  Epoch[1] Validation-cross-entropy=9.563357
+2019-04-23 22:55:22,954 [INFO]  Epoch[1] Validation-cross-entropy=9.563357
+2019-04-23 22:55:22,957 [INFO]  Epoch[1] Validation-Car-accuracy=0.000000
+2019-04-23 22:55:22,957 [INFO]  Epoch[1] Validation-Car-accuracy=0.000000
+2019-04-23 22:55:22,957 [INFO]  Epoch[1] Validation-Car-accuracy=0.000000
+2019-04-23 22:55:22,957 [INFO]  Epoch[1] Validation-Car-accuracy=0.000000
+2019-04-23 22:55:22,957 [INFO]  Epoch[1] Validation-Car-accuracy=0.000000
+2019-04-23 22:55:22,979 [INFO]  Epoch[2] Batch [0-11]	Speed: 9705.46 samples/sec	cross-entropy=9.976461	Car-accuracy=0.000000
+2019-04-23 22:55:22,979 [INFO]  Epoch[2] Batch [0-11]	Speed: 9705.46 samples/sec	cross-entropy=9.976461	Car-accuracy=0.000000
+2019-04-23 22:55:22,979 [INFO]  Epoch[2] Batch [0-11]	Speed: 9705.46 samples/sec	cross-entropy=9.976461	Car-accuracy=0.000000
+2019-04-23 22:55:22,979 [INFO]  Epoch[2] Batch [0-11]	Speed: 9705.46 samples/sec	cross-entropy=9.976461	Car-accuracy=0.000000
+2019-04-23 22:55:22,979 [INFO]  Epoch[2] Batch [0-11]	Speed: 9705.46 samples/sec	cross-entropy=9.976461	Car-accuracy=0.000000
+2019-04-23 22:55:22,993 [INFO]  Epoch[2] Train-cross-entropy=10.397355
+2019-04-23 22:55:22,993 [INFO]  Epoch[2] Train-cross-entropy=10.397355
+2019-04-23 22:55:22,993 [INFO]  Epoch[2] Train-cross-entropy=10.397355
+2019-04-23 22:55:22,993 [INFO]  Epoch[2] Train-cross-entropy=10.397355
+2019-04-23 22:55:22,993 [INFO]  Epoch[2] Train-cross-entropy=10.397355
+2019-04-23 22:55:22,996 [INFO]  Epoch[2] Train-Car-accuracy=0.000000
+2019-04-23 22:55:22,996 [INFO]  Epoch[2] Train-Car-accuracy=0.000000
+2019-04-23 22:55:22,996 [INFO]  Epoch[2] Train-Car-accuracy=0.000000
+2019-04-23 22:55:22,996 [INFO]  Epoch[2] Train-Car-accuracy=0.000000
+2019-04-23 22:55:22,996 [INFO]  Epoch[2] Train-Car-accuracy=0.000000
+2019-04-23 22:55:22,998 [INFO]  Epoch[2] Time cost=0.039
+2019-04-23 22:55:22,998 [INFO]  Epoch[2] Time cost=0.039
+2019-04-23 22:55:22,998 [INFO]  Epoch[2] Time cost=0.039
+2019-04-23 22:55:22,998 [INFO]  Epoch[2] Time cost=0.039
+2019-04-23 22:55:22,998 [INFO]  Epoch[2] Time cost=0.039
+2019-04-23 22:55:23,002 [INFO]  Saved checkpoint to "imputer_model/model-0002.params"
+2019-04-23 22:55:23,002 [INFO]  Saved checkpoint to "imputer_model/model-0002.params"
+2019-04-23 22:55:23,002 [INFO]  Saved checkpoint to "imputer_model/model-0002.params"
+2019-04-23 22:55:23,002 [INFO]  Saved checkpoint to "imputer_model/model-0002.params"
+2019-04-23 22:55:23,002 [INFO]  Saved checkpoint to "imputer_model/model-0002.params"
+2019-04-23 22:55:23,007 [INFO]  Epoch[2] Validation-cross-entropy=10.598167
+2019-04-23 22:55:23,007 [INFO]  Epoch[2] Validation-cross-entropy=10.598167
+2019-04-23 22:55:23,007 [INFO]  Epoch[2] Validation-cross-entropy=10.598167
+2019-04-23 22:55:23,007 [INFO]  Epoch[2] Validation-cross-entropy=10.598167
+2019-04-23 22:55:23,007 [INFO]  Epoch[2] Validation-cross-entropy=10.598167
+2019-04-23 22:55:23,009 [INFO]  Epoch[2] Validation-Car-accuracy=0.000000
+2019-04-23 22:55:23,009 [INFO]  Epoch[2] Validation-Car-accuracy=0.000000
+2019-04-23 22:55:23,009 [INFO]  Epoch[2] Validation-Car-accuracy=0.000000
+2019-04-23 22:55:23,009 [INFO]  Epoch[2] Validation-Car-accuracy=0.000000
+2019-04-23 22:55:23,009 [INFO]  Epoch[2] Validation-Car-accuracy=0.000000
+2019-04-23 22:55:23,025 [INFO]  Epoch[3] Batch [0-11]	Speed: 13312.13 samples/sec	cross-entropy=9.678492	Car-accuracy=0.000000
+2019-04-23 22:55:23,025 [INFO]  Epoch[3] Batch [0-11]	Speed: 13312.13 samples/sec	cross-entropy=9.678492	Car-accuracy=0.000000
+2019-04-23 22:55:23,025 [INFO]  Epoch[3] Batch [0-11]	Speed: 13312.13 samples/sec	cross-entropy=9.678492	Car-accuracy=0.000000
+2019-04-23 22:55:23,025 [INFO]  Epoch[3] Batch [0-11]	Speed: 13312.13 samples/sec	cross-entropy=9.678492	Car-accuracy=0.000000
+2019-04-23 22:55:23,025 [INFO]  Epoch[3] Batch [0-11]	Speed: 13312.13 samples/sec	cross-entropy=9.678492	Car-accuracy=0.000000
+2019-04-23 22:55:23,038 [INFO]  Epoch[3] Train-cross-entropy=10.066509
+2019-04-23 22:55:23,038 [INFO]  Epoch[3] Train-cross-entropy=10.066509
+2019-04-23 22:55:23,038 [INFO]  Epoch[3] Train-cross-entropy=10.066509
+2019-04-23 22:55:23,038 [INFO]  Epoch[3] Train-cross-entropy=10.066509
+2019-04-23 22:55:23,038 [INFO]  Epoch[3] Train-cross-entropy=10.066509
+2019-04-23 22:55:23,039 [INFO]  Epoch[3] Train-Car-accuracy=0.000000
+2019-04-23 22:55:23,039 [INFO]  Epoch[3] Train-Car-accuracy=0.000000
+2019-04-23 22:55:23,039 [INFO]  Epoch[3] Train-Car-accuracy=0.000000
+2019-04-23 22:55:23,039 [INFO]  Epoch[3] Train-Car-accuracy=0.000000
+2019-04-23 22:55:23,039 [INFO]  Epoch[3] Train-Car-accuracy=0.000000
+2019-04-23 22:55:23,040 [INFO]  Epoch[3] Time cost=0.030
+2019-04-23 22:55:23,040 [INFO]  Epoch[3] Time cost=0.030
+2019-04-23 22:55:23,040 [INFO]  Epoch[3] Time cost=0.030
+2019-04-23 22:55:23,040 [INFO]  Epoch[3] Time cost=0.030
+2019-04-23 22:55:23,040 [INFO]  Epoch[3] Time cost=0.030
+2019-04-23 22:55:23,044 [INFO]  Saved checkpoint to "imputer_model/model-0003.params"
+2019-04-23 22:55:23,044 [INFO]  Saved checkpoint to "imputer_model/model-0003.params"
+2019-04-23 22:55:23,044 [INFO]  Saved checkpoint to "imputer_model/model-0003.params"
+2019-04-23 22:55:23,044 [INFO]  Saved checkpoint to "imputer_model/model-0003.params"
+2019-04-23 22:55:23,044 [INFO]  Saved checkpoint to "imputer_model/model-0003.params"
+2019-04-23 22:55:23,047 [INFO]  No improvement detected for 3 epochs compared to 9.328556219736734 last error obtained: 11.15260394414266, stopping here
+2019-04-23 22:55:23,047 [INFO]  No improvement detected for 3 epochs compared to 9.328556219736734 last error obtained: 11.15260394414266, stopping here
+2019-04-23 22:55:23,047 [INFO]  No improvement detected for 3 epochs compared to 9.328556219736734 last error obtained: 11.15260394414266, stopping here
+2019-04-23 22:55:23,047 [INFO]  No improvement detected for 3 epochs compared to 9.328556219736734 last error obtained: 11.15260394414266, stopping here
+2019-04-23 22:55:23,047 [INFO]  No improvement detected for 3 epochs compared to 9.328556219736734 last error obtained: 11.15260394414266, stopping here
+2019-04-23 22:55:23,049 [INFO]  Stopping training, patience reached
+2019-04-23 22:55:23,049 [INFO]  Stopping training, patience reached
+2019-04-23 22:55:23,049 [INFO]  Stopping training, patience reached
+2019-04-23 22:55:23,049 [INFO]  Stopping training, patience reached
+2019-04-23 22:55:23,049 [INFO]  Stopping training, patience reached
+2019-04-23 22:55:23,050 [INFO]  
+========== done (0.20514392852783203 s) fit model
+2019-04-23 22:55:23,050 [INFO]  
+========== done (0.20514392852783203 s) fit model
+2019-04-23 22:55:23,050 [INFO]  
+========== done (0.20514392852783203 s) fit model
+2019-04-23 22:55:23,050 [INFO]  
+========== done (0.20514392852783203 s) fit model
+2019-04-23 22:55:23,050 [INFO]  
+========== done (0.20514392852783203 s) fit model
+2019-04-23 22:55:23,057 [INFO]  Expected calibration error: 100.0%
+2019-04-23 22:55:23,057 [INFO]  Expected calibration error: 100.0%
+2019-04-23 22:55:23,057 [INFO]  Expected calibration error: 100.0%
+2019-04-23 22:55:23,057 [INFO]  Expected calibration error: 100.0%
+2019-04-23 22:55:23,057 [INFO]  Expected calibration error: 100.0%
+2019-04-23 22:55:23,063 [INFO]  Expected calibration error after calibration: 100.0%
+2019-04-23 22:55:23,063 [INFO]  Expected calibration error after calibration: 100.0%
+2019-04-23 22:55:23,063 [INFO]  Expected calibration error after calibration: 100.0%
+2019-04-23 22:55:23,063 [INFO]  Expected calibration error after calibration: 100.0%
+2019-04-23 22:55:23,063 [INFO]  Expected calibration error after calibration: 100.0%
+2019-04-23 22:55:23,068 [INFO]  save metrics in imputer_model/fit-test-metrics.json
+2019-04-23 22:55:23,068 [INFO]  save metrics in imputer_model/fit-test-metrics.json
+2019-04-23 22:55:23,068 [INFO]  save metrics in imputer_model/fit-test-metrics.json
+2019-04-23 22:55:23,068 [INFO]  save metrics in imputer_model/fit-test-metrics.json
+2019-04-23 22:55:23,068 [INFO]  save metrics in imputer_model/fit-test-metrics.json
+2019-04-23 22:55:23,070 [INFO]  Keeping imputer_model/model-0000.params
+2019-04-23 22:55:23,070 [INFO]  Keeping imputer_model/model-0000.params
+2019-04-23 22:55:23,070 [INFO]  Keeping imputer_model/model-0000.params
+2019-04-23 22:55:23,070 [INFO]  Keeping imputer_model/model-0000.params
+2019-04-23 22:55:23,070 [INFO]  Keeping imputer_model/model-0000.params
+2019-04-23 22:55:23,072 [INFO]  Deleting imputer_model/model-0002.params
+2019-04-23 22:55:23,072 [INFO]  Deleting imputer_model/model-0002.params
+2019-04-23 22:55:23,072 [INFO]  Deleting imputer_model/model-0002.params
+2019-04-23 22:55:23,072 [INFO]  Deleting imputer_model/model-0002.params
+2019-04-23 22:55:23,072 [INFO]  Deleting imputer_model/model-0002.params
+2019-04-23 22:55:23,074 [INFO]  Deleting imputer_model/model-0001.params
+2019-04-23 22:55:23,074 [INFO]  Deleting imputer_model/model-0001.params
+2019-04-23 22:55:23,074 [INFO]  Deleting imputer_model/model-0001.params
+2019-04-23 22:55:23,074 [INFO]  Deleting imputer_model/model-0001.params
+2019-04-23 22:55:23,074 [INFO]  Deleting imputer_model/model-0001.params
+2019-04-23 22:55:23,076 [INFO]  Deleting imputer_model/model-0003.params
+2019-04-23 22:55:23,076 [INFO]  Deleting imputer_model/model-0003.params
+2019-04-23 22:55:23,076 [INFO]  Deleting imputer_model/model-0003.params
+2019-04-23 22:55:23,076 [INFO]  Deleting imputer_model/model-0003.params
+2019-04-23 22:55:23,076 [INFO]  Deleting imputer_model/model-0003.params
+2019-04-23 22:55:27,523 [INFO]  Concatenating numeric columns ['Beer', 'Steel', 'Gas', 'Electricity', 'Temp'] into numerical_features-BuNO6n9JEC
+2019-04-23 22:55:27,523 [INFO]  Concatenating numeric columns ['Beer', 'Steel', 'Gas', 'Electricity', 'Temp'] into numerical_features-BuNO6n9JEC
+2019-04-23 22:55:27,523 [INFO]  Concatenating numeric columns ['Beer', 'Steel', 'Gas', 'Electricity', 'Temp'] into numerical_features-BuNO6n9JEC
+2019-04-23 22:55:27,523 [INFO]  Concatenating numeric columns ['Beer', 'Steel', 'Gas', 'Electricity', 'Temp'] into numerical_features-BuNO6n9JEC
+2019-04-23 22:55:27,523 [INFO]  Concatenating numeric columns ['Beer', 'Steel', 'Gas', 'Electricity', 'Temp'] into numerical_features-BuNO6n9JEC
+2019-04-23 22:55:27,525 [INFO]  Normalizing with StandardScaler
+2019-04-23 22:55:27,525 [INFO]  Normalizing with StandardScaler
+2019-04-23 22:55:27,525 [INFO]  Normalizing with StandardScaler
+2019-04-23 22:55:27,525 [INFO]  Normalizing with StandardScaler
+2019-04-23 22:55:27,525 [INFO]  Normalizing with StandardScaler
+2019-04-23 22:55:27,527 [INFO]  Data Encoding - Encoded 448 rows of column                         Beer,Steel,Gas,Electricity,Temp with <class 'datawig.column_encoders.NumericalEncoder'> into                         <class 'numpy.ndarray'> of shape (448, 5)                         and then into shape (448, 5)
+2019-04-23 22:55:27,527 [INFO]  Data Encoding - Encoded 448 rows of column                         Beer,Steel,Gas,Electricity,Temp with <class 'datawig.column_encoders.NumericalEncoder'> into                         <class 'numpy.ndarray'> of shape (448, 5)                         and then into shape (448, 5)
+2019-04-23 22:55:27,527 [INFO]  Data Encoding - Encoded 448 rows of column                         Beer,Steel,Gas,Electricity,Temp with <class 'datawig.column_encoders.NumericalEncoder'> into                         <class 'numpy.ndarray'> of shape (448, 5)                         and then into shape (448, 5)
+2019-04-23 22:55:27,527 [INFO]  Data Encoding - Encoded 448 rows of column                         Beer,Steel,Gas,Electricity,Temp with <class 'datawig.column_encoders.NumericalEncoder'> into                         <class 'numpy.ndarray'> of shape (448, 5)                         and then into shape (448, 5)
+2019-04-23 22:55:27,527 [INFO]  Data Encoding - Encoded 448 rows of column                         Beer,Steel,Gas,Electricity,Temp with <class 'datawig.column_encoders.NumericalEncoder'> into                         <class 'numpy.ndarray'> of shape (448, 5)                         and then into shape (448, 5)
+2019-04-23 22:55:27,529 [INFO]  Concatenating numeric columns ['Car'] into Car
+2019-04-23 22:55:27,529 [INFO]  Concatenating numeric columns ['Car'] into Car
+2019-04-23 22:55:27,529 [INFO]  Concatenating numeric columns ['Car'] into Car
+2019-04-23 22:55:27,529 [INFO]  Concatenating numeric columns ['Car'] into Car
+2019-04-23 22:55:27,529 [INFO]  Concatenating numeric columns ['Car'] into Car
+2019-04-23 22:55:27,531 [INFO]  Normalizing with StandardScaler
+2019-04-23 22:55:27,531 [INFO]  Normalizing with StandardScaler
+2019-04-23 22:55:27,531 [INFO]  Normalizing with StandardScaler
+2019-04-23 22:55:27,531 [INFO]  Normalizing with StandardScaler
+2019-04-23 22:55:27,531 [INFO]  Normalizing with StandardScaler
+2019-04-23 22:55:27,534 [INFO]  Label Encoding - Encoded 448 rows of column                             Car with <class 'datawig.column_encoders.NumericalEncoder'> into                             <class 'numpy.ndarray'> of shape (448, 1) and                             then into shape (448, 1)
+2019-04-23 22:55:27,534 [INFO]  Label Encoding - Encoded 448 rows of column                             Car with <class 'datawig.column_encoders.NumericalEncoder'> into                             <class 'numpy.ndarray'> of shape (448, 1) and                             then into shape (448, 1)
+2019-04-23 22:55:27,534 [INFO]  Label Encoding - Encoded 448 rows of column                             Car with <class 'datawig.column_encoders.NumericalEncoder'> into                             <class 'numpy.ndarray'> of shape (448, 1) and                             then into shape (448, 1)
+2019-04-23 22:55:27,534 [INFO]  Label Encoding - Encoded 448 rows of column                             Car with <class 'datawig.column_encoders.NumericalEncoder'> into                             <class 'numpy.ndarray'> of shape (448, 1) and                             then into shape (448, 1)
+2019-04-23 22:55:27,534 [INFO]  Label Encoding - Encoded 448 rows of column                             Car with <class 'datawig.column_encoders.NumericalEncoder'> into                             <class 'numpy.ndarray'> of shape (448, 1) and                             then into shape (448, 1)
+2019-04-23 22:55:27,548 [INFO]  Top-k only for CategoricalEncoder, dropping Car, <class 'datawig.column_encoders.NumericalEncoder'>
+2019-04-23 22:55:27,548 [INFO]  Top-k only for CategoricalEncoder, dropping Car, <class 'datawig.column_encoders.NumericalEncoder'>
+2019-04-23 22:55:27,548 [INFO]  Top-k only for CategoricalEncoder, dropping Car, <class 'datawig.column_encoders.NumericalEncoder'>
+2019-04-23 22:55:27,548 [INFO]  Top-k only for CategoricalEncoder, dropping Car, <class 'datawig.column_encoders.NumericalEncoder'>
+2019-04-23 22:55:27,548 [INFO]  Top-k only for CategoricalEncoder, dropping Car, <class 'datawig.column_encoders.NumericalEncoder'>
+2019-04-23 22:55:27,550 [INFO]  Precision filtering only for CategoricalEncoder returning                             Car unfiltered
+2019-04-23 22:55:27,550 [INFO]  Precision filtering only for CategoricalEncoder returning                             Car unfiltered
+2019-04-23 22:55:27,550 [INFO]  Precision filtering only for CategoricalEncoder returning                             Car unfiltered
+2019-04-23 22:55:27,550 [INFO]  Precision filtering only for CategoricalEncoder returning                             Car unfiltered
+2019-04-23 22:55:27,550 [INFO]  Precision filtering only for CategoricalEncoder returning                             Car unfiltered
